@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 import cimas_lib as L, elev
 
 VALENCIA = (39.4699, -0.3763)
+DEM = "AWS Terrarium ~15 m" if os.environ.get("ELEV_SOURCE") == "terrarium" else "EU-DEM 25 m"   # fuente de altitudes de esta ejecución
 peaks = json.load(open("data/cimas/peaks.json"))
 defs = json.load(open("data/cimas/routes.json"))
 want = set(sys.argv[1:])
@@ -104,7 +105,7 @@ for p in peaks:
         wpts = [{"lon": round(pts[0][1], 6), "lat": round(pts[0][0], 6), "ele": m["z0"], "name": "Inicio"},
                 {"lon": p["lon"], "lat": p["lat"], "ele": p["ele"], "name": f"Cumbre {p['name']}"}]
         routes.append({**{k: r[k] for k in ("id", "name", "start", "marked", "marked_pct", "notes") if k in r}, **m, **({"warn": r["warn"]} if r["warn"] else {}),
-                       "diff": grade(m), "maxslope": m["max_slope"], "wpts": wpts,
+                       "diff": grade(m), "dem": DEM, "maxslope": m["max_slope"], "wpts": wpts,
                        "pts": [[round(a[1], 6), round(a[0], 6), round(e, 1)] for a, e in zip(pts, z)],
                        "dist": [round(d / 1000, 3) for d in dist]})
     from collections import Counter

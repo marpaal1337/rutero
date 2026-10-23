@@ -389,7 +389,7 @@ async function showPeak(id) {
   $('pname').textContent = P.name;
   $('psub').innerHTML = `${P.ele} m · ${esc(P.comarca)} · ${esc(P.prov)}<br>${badges(peak)}${peak.prom ? `<span class="mut">prominencia ${peak.prom >= 200 && P.prom_min ? '≥ ' : ''}${peak.prom} m</span>` : ''}`;
   $('tabs').innerHTML = KEYS.map(k => `<button class="tab" type="button" data-k="${k}" style="--c:var(--r${k})" aria-pressed="false"><b>Ruta ${k}</b><span>${String(ROUTES[k].km).replace('.', ',')} km</span></button>`).join('');
-  $('note').textContent = 'Rutas calculadas sobre OpenStreetMap (pesan más las sendas PR/GR/SL) y altitudes EU-DEM 25 m: no son grabaciones GPS. Tiempos con Naismith, sin paradas. Contrasta con el estado real de la senda.';
+  $('note').textContent = `Rutas calculadas sobre OpenStreetMap (pesan más las sendas PR/GR/SL) y altitudes ${P.routes[0].dem || 'EU-DEM 25 m'}: no son grabaciones GPS. Tiempos con Naismith, sin paradas. Contrasta con el estado real de la senda.`;
   syncDone(); renderTable();
   sunAt(P.lat, P.lon);
   addRoutes(); select(KEYS[0]);
