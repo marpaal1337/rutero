@@ -4,7 +4,7 @@
    - Teselas del mapa y librerías externas: copia guardada primero. */
 const V = 'cims-v1', LIBS = 'cims-libs', TILES = 'cims-tiles', OFFLINE = 'cims-offline';   // OFFLINE lo rellena offline.js y nunca se purga
 const SHELL = ['./', 'index.html', 'app.css', 'app.js', 'track.js', 'clusters.js', 'offline.js', '../scripts/shared.js', 'data/peaks.json', 'manifest.webmanifest', 'icon.svg'];
-const TILE_HOST = /(arcgisonline\.com|opentopomap\.org|ign\.es|elevation-tiles-prod|waymarkedtrails\.org)$/;
+const TILE_URL = /^(server\.arcgisonline\.com|[a-z]\.tile\.opentopomap\.org|www\.ign\.es\/wmts|s3\.amazonaws\.com\/elevation-tiles-prod|tile\.waymarkedtrails\.org)/;   // host + ruta: el relieve (AWS) solo se distingue por la ruta
 const LIB_HOST = /^(unpkg\.com|fonts\.googleapis\.com|fonts\.gstatic\.com)$/;
 const MAX_TILES = 1500;
 
@@ -33,6 +33,6 @@ self.addEventListener('fetch', e => {
   const req = e.request; if (req.method !== 'GET') return;
   const u = new URL(req.url);
   if (u.origin === location.origin) e.respondWith(networkFirst(req));
-  else if (TILE_HOST.test(u.hostname)) e.respondWith(cacheFirst(TILES, req));
+  else if (TILE_URL.test(u.hostname + u.pathname)) e.respondWith(cacheFirst(TILES, req));
   else if (LIB_HOST.test(u.hostname)) e.respondWith(cacheFirst(LIBS, req));
 });
