@@ -43,7 +43,7 @@ Regenerar: `python scripts/fetch_osm.py data/osm.json && python scripts/build_ro
 
 Web estática en `web/` (MapLibre), con **un solo mapa 3D**: la vista regional muestra las cimas y una lista con filtros (provincia, búsqueda, orden por altura o cercanía a Valencia); al elegir una, la cámara vuela hasta ella y aparece el visor 3D de sus rutas (pestañas A/B/C, color por pendiente, sol, sobrevuelo, perfil inferior con las rutas superpuestas y una tabla plegable «Comparar rutas» con la mejor de cada métrica). El enlace `#/cima/<id>` abre directamente una cima. Piloto con 7 cimas: Penyagolosa, Aitana, Puig Campana, Cabeçó d'Or, Bèrnia, Mondúver y Montgó.
 
-Para verla en local hay que servir la **raíz del repositorio** (la web carga `scripts/shared.js`): `python -m http.server` y abrir `/web/`. `index.html` de la raíz redirige ahí (GitHub Pages). El visor antiguo solo del Montgó sigue en `out/visor_3d.html`.
+Para verla en local hay que servir la **raíz del repositorio** (la web carga `scripts/shared.js`): `python3 -m http.server` desde la raíz (en WSL/Linux `python` no existe; usa `python3`) y abrir `http://localhost:8000/web/`. Si se sirve desde `web/`, `scripts/shared.js` da 404 y la página falla con `LEGEND_CSS is not defined`. `index.html` de la raíz redirige ahí (GitHub Pages). El visor antiguo solo del Montgó sigue en `out/visor_3d.html`.
 
 Pipeline (solo biblioteca estándar; no necesita networkx ni matplotlib. Solo `ELEV_SOURCE=terrarium`, que saca las altitudes de teselas AWS Terrarium en lugar de EU-DEM, requiere además numpy y Pillow):
 1. `data/cimas/peaks.json`: catálogo de cimas (coordenadas y altura verificadas en OSM).
