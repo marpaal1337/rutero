@@ -46,8 +46,8 @@ def build_graph(osm):
                     WAYREF.setdefault(m["ref"], set()).add(label)
     adj, pos = {}, {}
     for e in osm["elements"]:
-        if e["type"] != "way" or "highway" not in e.get("tags", {}):
-            continue
+        if e["type"] != "way" or "highway" not in e.get("tags", {}) or "geometry" not in e:
+            continue   # sin geometría: son aparcamientos con highway=service que llegan en la consulta de POI (out tags center)
         pen = PEN.get(e["tags"]["highway"])
         if pen is None:
             continue
