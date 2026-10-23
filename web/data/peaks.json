@@ -155,7 +155,7 @@
     "up": 926,
     "t_up": 3.06,
     "max_slope": 46,
-    "marked": "PR-CV 13 + PR-CV 17",
+    "marked": "PR-CV 17 + PR-CV 13",
     "drive": {
      "km": 145,
      "min": 115
