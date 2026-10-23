@@ -11,7 +11,7 @@ Q = f"""[out:json][timeout:90];
 out tags center;"""
 req = urllib.request.Request("https://overpass-api.de/api/interpreter",
     data=urllib.parse.urlencode({"data": Q}).encode(),
-    headers={"User-Agent": "montgo-route-planner/1.0 (personal hiking)"})
+    headers={"User-Agent": "rutero/1.0 (personal hiking)"})
 d = json.load(urllib.request.urlopen(req, timeout=120))
 for x in d["elements"]:
     t = x.get("tags", {}); c = x.get("center") or x

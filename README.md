@@ -1,4 +1,4 @@
-# Montgó · domingo 25-oct-2026 · 5 amigos desde Valencia
+# Rutero · Montgó · domingo 25-oct-2026 · 5 amigos desde Valencia
 
 ## Comparativa (generada con OSM + EU-DEM 25 m; subida = una vía)
 | Ruta | Km | Desnivel + | Alt. salida | Subida / bajada* | Carácter |

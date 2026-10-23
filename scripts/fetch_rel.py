@@ -4,7 +4,7 @@ relation(id:1237477,2319713);
 out geom;"""
 req = urllib.request.Request("https://overpass-api.de/api/interpreter",
     data=urllib.parse.urlencode({"data": Q}).encode(),
-    headers={"User-Agent": "montgo-route-planner/1.0 (personal hiking)"})
+    headers={"User-Agent": "rutero/1.0 (personal hiking)"})
 d = json.load(urllib.request.urlopen(req, timeout=90))
 json.dump(d, open("data/rels.json", "w"))
 for r in d["elements"]:

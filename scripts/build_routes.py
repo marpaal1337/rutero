@@ -53,7 +53,7 @@ for k, r in ROUTES.items():
                   maxslope=max(abs((z[i+1]-z[i])/15*100) for i in range(len(z)-1)), pts=pts, z=z, dist=dist, file=r["file"], wpts=r["wpts"])
     # GPX
     def wpt(n, p, ele): return f'  <wpt lat="{p[0]:.6f}" lon="{p[1]:.6f}"><ele>{ele:.0f}</ele><name>{n}</name></wpt>\n'
-    g = ['<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="montgo-planner" xmlns="http://www.topografix.com/GPX/1/1">\n']
+    g = ['<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="rutero" xmlns="http://www.topografix.com/GPX/1/1">\n']
     g.append(f'  <metadata><name>{r["name"]}</name><desc>Generado con OSM + EU-DEM 25 m. Planificación: verificar estado de sendas.</desc></metadata>\n')
     g.append(wpt("Inicio", pts[0], z[0]))
     for n, p in r["wpts"][1:]: g.append(wpt(n, p, z[min(range(len(pts)), key=lambda i: graph.hav(pts[i], p))]))

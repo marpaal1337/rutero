@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 LON0, LON1, LAT0, LAT1 = 0.060, 0.165, 38.786, 38.836   # zona con margen sobre las rutas
-UA = {"User-Agent": "montgo-planner/1.0 (proyecto personal de senderismo)"}
+UA = {"User-Agent": "rutero/1.0 (proyecto personal de senderismo)"}
 CACHE = "data/tiles"
 
 

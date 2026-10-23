@@ -13,7 +13,7 @@ PROM_MIN = 200                          # m de prominencia para entrar por méri
 ELE_MIN_FAMA = 400                      # m mínimos si entra solo por tener wikidata/wikipedia
 DEM_DIR = "data/cimas/dem"
 OUT = "data/cimas/catalog.json"
-UA = {"User-Agent": "montgo-planner/1.0 (proyecto personal de senderismo)"}
+UA = {"User-Agent": "rutero/1.0 (proyecto personal de senderismo)"}
 
 
 def tile_xy(lon, lat):

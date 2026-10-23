@@ -12,7 +12,7 @@ def _tile(x, y):
         path = f"data/cimas/dem/{TZ}_{x}_{y}.png"
         os.makedirs("data/cimas/dem", exist_ok=True)
         if not os.path.exists(path):
-            req = urllib.request.Request(f"https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{TZ}/{x}/{y}.png", headers={"User-Agent": "montgo-planner/1.0"})
+            req = urllib.request.Request(f"https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{TZ}/{x}/{y}.png", headers={"User-Agent": "rutero/1.0"})
             with urllib.request.urlopen(req, timeout=30) as r, open(path, "wb") as f:
                 f.write(r.read())
             time.sleep(0.1)
@@ -44,7 +44,7 @@ def elevations(pts):
         url = "https://api.opentopodata.org/v1/eudem25m?locations=" + "|".join(f"{a:.5f},{b:.5f}" for a, b in chunk)
         for t in range(4):
             try:
-                r = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "montgo-route-planner/1.0"}), timeout=60))
+                r = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "rutero/1.0"}), timeout=60))
                 break
             except Exception as ex:
                 print("retry", ex); time.sleep(3)
