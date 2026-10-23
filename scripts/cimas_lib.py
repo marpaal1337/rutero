@@ -183,6 +183,37 @@ def bearing(a, b):
     return (math.degrees(math.atan2(y, x)) + 360) % 360
 
 
+START_KINDS = ("parking", "alpine_hut", "wilderness_hut", "camp_site", "shelter")   # POI de OSM que valen como punto de salida
+
+
+def check_start(osm, adj, pos, start, km, drive):
+    """Avisos sobre una salida (lista de códigos; vacía si no hay nada que revisar).
+    osm/adj/pos pueden ser None (rutas desde GPX): entonces solo se comprueban longitud y coche.
+    lejos_red: inicio a >150 m de sendas · sin_parking: ningún aparcamiento/refugio a <300 m ·
+    coche_largo: >150 min desde Valencia o sin dato · corta/larga: fuera de 3-12 km."""
+    warn = []
+    if adj:
+        if nearest(adj, pos, start)[1] > 150:
+            warn.append("lejos_red")
+    if osm:
+        for e in osm["elements"]:
+            t = e.get("tags", {})
+            if "highway" in t or not t:
+                continue
+            c = (e["lat"], e["lon"]) if "lat" in e else (e["center"]["lat"], e["center"]["lon"]) if "center" in e else None
+            if c and (t.get("amenity") or t.get("tourism") or t.get("natural")) in START_KINDS and hav(c, start) <= 300:
+                break
+        else:
+            warn.append("sin_parking")
+    if not drive or drive["min"] > 150:
+        warn.append("coche_largo")
+    if km < 3:
+        warn.append("corta")
+    elif km > 12:
+        warn.append("larga")
+    return warn
+
+
 def candidates(peak, osm, kmin=3.0, kmax=12.0):
     """Salidas candidatas (aparcamiento, refugio, camping) enrutando desde la cumbre sobre OSM.
     Devuelve (d0, lista ordenada de mejor a peor) con d0 = distancia de la cumbre a la red y elementos
@@ -206,7 +237,7 @@ def candidates(peak, osm, kmin=3.0, kmax=12.0):
         if "highway" in t or not t: continue
         c = (e["lat"], e["lon"]) if "lat" in e else (e["center"]["lat"], e["center"]["lon"]) if "center" in e else None
         kind = t.get("amenity") or t.get("tourism") or t.get("natural")
-        if not c or kind not in ("parking", "alpine_hut", "wilderness_hut", "camp_site", "shelter"): continue
+        if not c or kind not in START_KINDS: continue
         n = min(adj, key=lambda k: hav(pos[k], c))
         if hav(pos[n], c) > 60 or n not in length: continue
         km = length[n] / 1000

@@ -72,15 +72,18 @@ for p in peaks:
     if not rdefs:
         continue
     print("==", p["name"])
-    graph = None
+    graph = osm = None
     routes = []
     for r in rdefs:
         if "gpx" in r:
             raw = gpx_points(r["gpx"])
+            gadj = gpos = gosm = None
         else:
             if graph is None:
-                graph = L.build_graph(json.load(open(f"data/cimas/{p['id']}_osm.json")))
+                osm = json.load(open(f"data/cimas/{p['id']}_osm.json"))
+                graph = L.build_graph(osm)
             adj, pos = graph
+            gadj, gpos, gosm = adj, pos, osm
             nodes = L.route(adj, pos, [tuple(v) for v in r["via"]])
             raw = [pos[n] for n in nodes]
             frac, refs = L.marked_summary(adj, nodes)
@@ -91,13 +94,16 @@ for p in peaks:
         z = L.smooth(elev.elevations(pts))
         m, dist = L.metrics(pts, z)
         m["drive"] = drive_from_valencia(pts[0])
+        r["warn"] = L.check_start(gosm, gadj, gpos, pts[0], m["km"], m["drive"])
+        if r["warn"]:
+            print("  ⚠ revisar salida:", ", ".join(r["warn"]))
         if "name" not in r:
             r["start"] = place_name(pts[0]) or f"{pts[0][0]:.4f}, {pts[0][1]:.4f}"
             r["name"] = f"Desde {r['start']}"
         print(f"  {r['id']} {r['name'][:50]:<50} {m['km']} km +{m['up']} máx {m['max_slope']}% salida {m['z0']} m")
         wpts = [{"lon": round(pts[0][1], 6), "lat": round(pts[0][0], 6), "ele": m["z0"], "name": "Inicio"},
                 {"lon": p["lon"], "lat": p["lat"], "ele": p["ele"], "name": f"Cumbre {p['name']}"}]
-        routes.append({**{k: r[k] for k in ("id", "name", "start", "marked", "marked_pct", "notes") if k in r}, **m,
+        routes.append({**{k: r[k] for k in ("id", "name", "start", "marked", "marked_pct", "notes") if k in r}, **m, **({"warn": r["warn"]} if r["warn"] else {}),
                        "diff": grade(m), "maxslope": m["max_slope"], "wpts": wpts,
                        "pts": [[round(a[1], 6), round(a[0], 6), round(e, 1)] for a, e in zip(pts, z)],
                        "dist": [round(d / 1000, 3) for d in dist]})

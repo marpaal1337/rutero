@@ -161,7 +161,7 @@ function select(k) {
   stopFly(); cur = k;
   const r = ROUTES[k];
   document.querySelectorAll('.tab').forEach(b => b.setAttribute('aria-pressed', b.dataset.k === k));
-  $('name').textContent = r.name + (r.marked ? ' · ' + r.marked : '');
+  $('name').textContent = r.name + (r.marked ? ' · ' + r.marked : '') + (r.warn?.length ? ' · ⚠ salida por revisar' : '');
   $('stats').innerHTML = [
     ['Distancia', String(r.km).replace('.', ',') + ' km'], ['Desnivel', '+' + r.up + ' m'], ['Cima', P.ele + ' m'],
     ['Subida', fmtH(r.t_up)], ['Bajada', fmtH(r.t_dn)], ['Dificultad', GRADES[r.diff]],
