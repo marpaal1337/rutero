@@ -13,6 +13,9 @@ def elevations(pts):
                 break
             except Exception as ex:
                 print("retry", ex); time.sleep(3)
+        else:   # sin respuesta: abortar antes que reutilizar la respuesta del lote anterior y envenenar la caché
+            json.dump(c, open(CACHE, "w"))
+            raise RuntimeError("opentopodata no responde")
         for p, res in zip(chunk, r["results"]):
             c[_key(p)] = res["elevation"]
         time.sleep(1.1)
