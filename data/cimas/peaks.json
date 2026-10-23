@@ -62,7 +62,8 @@
   "osm": 7742037055,
   "prom": 200,
   "prom_min": true,
-  "fama": false
+  "fama": false,
+  "tier": "emblematica"
  },
  {
   "id": "monduver",
@@ -88,7 +89,8 @@
   "osm": 26863905,
   "prom": 200,
   "prom_min": true,
-  "fama": false
+  "fama": false,
+  "tier": "emblematica"
  },
  {
   "id": "pico-de-la-nevera",

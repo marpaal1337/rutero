@@ -39,7 +39,10 @@ for oid in map(int, sys.argv[1:]):
         print(oid, "no está en el catálogo o ya existe"); continue
     name = nice(c["name"])
     prov, comarca = place(c["lat"], c["lon"])
-    peaks.append({"id": slug(name), "name": name, "ele": int(round(c["ele"])), "lat": c["lat"], "lon": c["lon"],
+    pid = slug(name)
+    if any(q["id"] == pid for q in peaks):   # homónimos (p. ej. varios «Pico del Águila»): se distinguen por comarca
+        pid += "-" + slug(comarca)
+    peaks.append({"id": pid, "name": name, "ele": int(round(c["ele"])), "lat": c["lat"], "lon": c["lon"],
                   "prov": prov, "comarca": comarca, "osm": oid, "prom": c["prom"], "prom_min": c["prom_min"], "fama": c["fama"]})
     print(f"+ {peaks[-1]['id']:<24} {name} {c['ele']:.0f} m  {prov} / {comarca}")
 json.dump(peaks, open(PEAKS, "w"), ensure_ascii=False, indent=1)
