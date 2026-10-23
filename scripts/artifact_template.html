@@ -78,6 +78,7 @@
   #legend { margin-top: 7px; }
   #legend i { display: block; height: 8px; border-radius: 4px; }
   #legend div { display: flex; justify-content: space-between; font: 500 10px var(--mono); color: var(--mut); margin-top: 2px; }
+  input[type=date] { width: 100%; margin-top: 6px; font: 12px var(--mono); color: var(--fg); background: transparent; border: 1px solid var(--line, currentColor); border-radius: 6px; padding: 3px 6px; color-scheme: light dark; }
   input[type=range] { width: 100%; margin: 0; accent-color: var(--accent); }
   #sunnfo { font-size: 11px; color: var(--mut); margin-top: 3px; }
   .lbl { position: absolute; left: 0; top: 0; pointer-events: none; transform: translate(-50%, -140%); white-space: nowrap;
@@ -124,7 +125,8 @@
       </div>
       <div class="grp">
         <div class="glabel"><label for="hour">Sol</label><output id="hourv" for="hour"></output></div>
-        <input type="range" id="hour" min="6" max="19.5" step="0.0833" value="10">
+        <input type="range" id="hour" min="5" max="22" step="0.0833" value="10">
+        <input type="date" id="sundate" aria-label="Fecha del sol">
         <div id="sunnfo"></div>
       </div>
       </div>
@@ -420,6 +422,15 @@ function setSun(h) {
   stage.style.background = `linear-gradient(${stops[0]}, ${stops[1]})`;
 }
 $('hour').addEventListener('input', e => setSun(+e.target.value));
+const pad2 = n => String(n).padStart(2, '0'), today = new Date();
+$('sundate').value = `${today.getFullYear()}-${pad2(today.getMonth() + 1)}-${pad2(today.getDate())}`;   // por defecto: hoy
+function setSunDate() {
+  const [y, m, d] = $('sundate').value.split('-').map(Number);
+  if (!y) return;
+  setSunLocation(SUN.lat, SUN.lon, new Date(y, m - 1, d)); setSun(+$('hour').value);
+}
+$('sundate').addEventListener('change', setSunDate);
+setSunLocation(SUN.lat, SUN.lon);
 
 /* ---------- tema ---------- */
 function applyTheme() {
