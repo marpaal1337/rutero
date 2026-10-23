@@ -6,7 +6,10 @@
   "lat": 40.22276,
   "lon": -0.34974,
   "prov": "Castelló",
-  "comarca": "Els Ports / l'Alcalatén",
+  "comarca": "els Ports / l'Alcalatén",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 0,
   "routes": [
    {
     "id": "A",
@@ -19,7 +22,8 @@
     "drive": {
      "km": 154,
      "min": 221
-    }
+    },
+    "diff": 0
    },
    {
     "id": "B",
@@ -31,7 +35,8 @@
     "drive": {
      "km": 151,
      "min": 185
-    }
+    },
+    "diff": 0
    },
    {
     "id": "C",
@@ -43,7 +48,8 @@
     "drive": {
      "km": 120,
      "min": 210
-    }
+    },
+    "diff": 2
    }
   ]
  },
@@ -54,7 +60,10 @@
   "lat": 38.64956,
   "lon": -0.26613,
   "prov": "Alacant",
-  "comarca": "El Comtat / la Marina Baixa",
+  "comarca": "el Comtat / la Marina Baixa",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 0,
   "routes": [
    {
     "id": "A",
@@ -67,7 +76,8 @@
     "drive": {
      "km": 134,
      "min": 109
-    }
+    },
+    "diff": 0
    },
    {
     "id": "B",
@@ -80,7 +90,8 @@
     "drive": {
      "km": 133,
      "min": 104
-    }
+    },
+    "diff": 2
    },
    {
     "id": "C",
@@ -92,7 +103,8 @@
     "drive": {
      "km": 134,
      "min": 107
-    }
+    },
+    "diff": 3
    }
   ]
  },
@@ -104,6 +116,9 @@
   "lon": -0.19307,
   "prov": "Alacant",
   "comarca": "la Marina Baixa",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 2,
   "routes": [
    {
     "id": "A",
@@ -116,7 +131,8 @@
     "drive": {
      "km": 147,
      "min": 117
-    }
+    },
+    "diff": 2
    },
    {
     "id": "B",
@@ -129,7 +145,8 @@
     "drive": {
      "km": 149,
      "min": 107
-    }
+    },
+    "diff": 2
    },
    {
     "id": "C",
@@ -142,7 +159,8 @@
     "drive": {
      "km": 145,
      "min": 115
-    }
+    },
+    "diff": 2
    }
   ]
  },
@@ -154,6 +172,9 @@
   "lon": -0.39529,
   "prov": "Alacant",
   "comarca": "l'Alacantí",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 1,
   "routes": [
    {
     "id": "A",
@@ -165,7 +186,8 @@
     "drive": {
      "km": 177,
      "min": 123
-    }
+    },
+    "diff": 2
    },
    {
     "id": "B",
@@ -178,7 +200,8 @@
     "drive": {
      "km": 147,
      "min": 114
-    }
+    },
+    "diff": 1
    },
    {
     "id": "C",
@@ -190,7 +213,8 @@
     "drive": {
      "km": 175,
      "min": 119
-    }
+    },
+    "diff": 2
    }
   ]
  },
@@ -202,6 +226,9 @@
   "lon": -0.05499,
   "prov": "Alacant",
   "comarca": "la Marina Baixa",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 2,
   "routes": [
    {
     "id": "A",
@@ -214,7 +241,8 @@
     "drive": {
      "km": 141,
      "min": 102
-    }
+    },
+    "diff": 3
    },
    {
     "id": "B",
@@ -226,7 +254,8 @@
     "drive": {
      "km": 130,
      "min": 90
-    }
+    },
+    "diff": 2
    },
    {
     "id": "C",
@@ -238,7 +267,8 @@
     "drive": {
      "km": 121,
      "min": 87
-    }
+    },
+    "diff": 2
    }
   ]
  },
@@ -250,6 +280,9 @@
   "lon": -0.26658,
   "prov": "València",
   "comarca": "la Safor / la Costera",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 1,
   "routes": [
    {
     "id": "A",
@@ -262,7 +295,8 @@
     "drive": {
      "km": 77,
      "min": 63
-    }
+    },
+    "diff": 1
    },
    {
     "id": "B",
@@ -275,7 +309,8 @@
     "drive": {
      "km": 62,
      "min": 65
-    }
+    },
+    "diff": 1
    },
    {
     "id": "C",
@@ -288,7 +323,8 @@
     "drive": {
      "km": 70,
      "min": 63
-    }
+    },
+    "diff": 1
    }
   ]
  },
@@ -300,6 +336,9 @@
   "lon": 0.12937,
   "prov": "Alacant",
   "comarca": "la Marina Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
   "routes": [
    {
     "id": "A",
@@ -312,7 +351,8 @@
     "drive": {
      "km": 115,
      "min": 93
-    }
+    },
+    "diff": 0
    },
    {
     "id": "B",
@@ -325,7 +365,8 @@
     "drive": {
      "km": 106,
      "min": 76
-    }
+    },
+    "diff": 2
    },
    {
     "id": "C",
@@ -337,7 +378,5090 @@
     "drive": {
      "km": 107,
      "min": 80
-    }
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "pico-de-la-nevera",
+  "name": "Pico de la Nevera",
+  "ele": 877,
+  "lat": 39.85745,
+  "lon": -0.29203,
+  "prov": "Castelló",
+  "comarca": "la Plana Baixa",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde la Vall d'Uixó",
+    "km": 7.97,
+    "up": 917,
+    "t_up": 3.12,
+    "max_slope": 42,
+    "drive": {
+     "km": 49,
+     "min": 41
+    },
+    "diff": 2
+   },
+   {
+    "id": "B",
+    "name": "Desde l'Assut",
+    "km": 5.16,
+    "up": 771,
+    "t_up": 2.32,
+    "max_slope": 39,
+    "drive": {
+     "km": 51,
+     "min": 44
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Artana",
+    "km": 8.57,
+    "up": 732,
+    "t_up": 2.93,
+    "max_slope": 40,
+    "marked": "GR 36",
+    "drive": {
+     "km": 64,
+     "min": 62
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "pic-d-espada",
+  "name": "Pic d'Espadà",
+  "ele": 1103,
+  "lat": 39.9011,
+  "lon": -0.37633,
+  "prov": "Castelló",
+  "comarca": "la Plana Baixa",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde l'Alcúdia de Veo",
+    "km": 7.08,
+    "up": 594,
+    "t_up": 2.41,
+    "max_slope": 39,
+    "marked": "GR 333",
+    "drive": {
+     "km": 76,
+     "min": 81
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde La Vall d'Almonesir",
+    "km": 11.01,
+    "up": 773,
+    "t_up": 3.49,
+    "max_slope": 36,
+    "drive": {
+     "km": 64,
+     "min": 55
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Vilamalur",
+    "km": 9.7,
+    "up": 860,
+    "t_up": 3.37,
+    "max_slope": 39,
+    "marked": "GR 333",
+    "drive": {
+     "km": 79,
+     "min": 87
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "aldaia",
+  "name": "Aldaia",
+  "ele": 751,
+  "lat": 39.00046,
+  "lon": -0.29687,
+  "prov": "València",
+  "comarca": "la Safor",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Gandia",
+    "km": 5.92,
+    "up": 473,
+    "t_up": 1.97,
+    "max_slope": 30,
+    "marked": "PR-CV 60 + SL-CV 79",
+    "drive": {
+     "km": 77,
+     "min": 63
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde la Puigmola",
+    "km": 7.47,
+    "up": 408,
+    "t_up": 2.17,
+    "max_slope": 24,
+    "marked": "PR-CV 60",
+    "drive": {
+     "km": 69,
+     "min": 67
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde la Drova",
+    "km": 4.1,
+    "up": 347,
+    "t_up": 1.4,
+    "max_slope": 30,
+    "marked": "PR-CV 60",
+    "drive": {
+     "km": 79,
+     "min": 65
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "pico-de-los-ajos",
+  "name": "Pico de los Ajos",
+  "ele": 1082,
+  "lat": 39.51395,
+  "lon": -0.87029,
+  "prov": "València",
+  "comarca": "la Foia de Bunyol",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Setaigües (701 m)",
+    "km": 9.18,
+    "up": 291,
+    "t_up": 2.32,
+    "max_slope": 26,
+    "marked": "GR 7",
+    "drive": {
+     "km": 52,
+     "min": 42
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Xera",
+    "km": 13.29,
+    "up": 319,
+    "t_up": 3.19,
+    "max_slope": 25,
+    "marked": "GR 7",
+    "drive": {
+     "km": 93,
+     "min": 109
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Setaigües (709 m)",
+    "km": 14.93,
+    "up": 421,
+    "t_up": 3.69,
+    "max_slope": 26,
+    "marked": "GR 7",
+    "drive": {
+     "km": 52,
+     "min": 41
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "montote",
+  "name": "Montote",
+  "ele": 963,
+  "lat": 39.45086,
+  "lon": -1.03622,
+  "prov": "València",
+  "comarca": "la Plana d'Utiel-Requena",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Requena (661 m)",
+    "km": 8.09,
+    "up": 348,
+    "t_up": 2.2,
+    "max_slope": 25,
+    "marked": "PR-CV 351",
+    "drive": {
+     "km": 68,
+     "min": 53
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Requena (717 m)",
+    "km": 8.18,
+    "up": 344,
+    "t_up": 2.21,
+    "max_slope": 25,
+    "marked": "PR-CV 351",
+    "drive": {
+     "km": 66,
+     "min": 49
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Setaigües",
+    "km": 8.99,
+    "up": 335,
+    "t_up": 2.36,
+    "max_slope": 19,
+    "marked": "GR 238",
+    "drive": {
+     "km": 61,
+     "min": 63
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "bellida",
+  "name": "Bellida",
+  "ele": 1323,
+  "lat": 39.8486,
+  "lon": -0.74013,
+  "prov": "Castelló",
+  "comarca": "l'Alt Palància",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Andilla (953 m)",
+    "km": 7.64,
+    "up": 473,
+    "t_up": 2.32,
+    "max_slope": 24,
+    "marked": "GR 10",
+    "drive": {
+     "km": 80,
+     "min": 106
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde La Pobleta",
+    "km": 10.89,
+    "up": 581,
+    "t_up": 3.15,
+    "max_slope": 24,
+    "marked": "GR 10",
+    "drive": {
+     "km": 75,
+     "min": 73
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Andilla (1185 m)",
+    "km": 9.02,
+    "up": 334,
+    "t_up": 2.36,
+    "max_slope": 20,
+    "marked": "GR 10 + GR 7",
+    "drive": {
+     "km": 81,
+     "min": 112
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "pico-del-ave",
+  "name": "Pico del Ave",
+  "ele": 952,
+  "lat": 39.30521,
+  "lon": -0.77843,
+  "prov": "València",
+  "comarca": "la Foia de Bunyol",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Dosaigües",
+    "km": 3.72,
+    "up": 583,
+    "t_up": 1.72,
+    "max_slope": 45,
+    "drive": {
+     "km": 52,
+     "min": 59
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "bartolo",
+  "name": "Bartolo",
+  "ele": 729,
+  "lat": 40.08551,
+  "lon": 0.0311,
+  "prov": "Castelló",
+  "comarca": "la Plana Alta",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Benicàssim",
+    "km": 6.45,
+    "up": 687,
+    "t_up": 2.44,
+    "max_slope": 42,
+    "marked": "PR-CV 451",
+    "drive": {
+     "km": 85,
+     "min": 65
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Montemolino",
+    "km": 6.3,
+    "up": 738,
+    "t_up": 2.49,
+    "max_slope": 42,
+    "marked": "PR-CV 397 + PR-CV 451",
+    "drive": {
+     "km": 86,
+     "min": 65
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Borriol",
+    "km": 7.43,
+    "up": 678,
+    "t_up": 2.62,
+    "max_slope": 39,
+    "marked": "PR-CV 378",
+    "drive": {
+     "km": 83,
+     "min": 70
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "cim-de-la-safor",
+  "name": "Cim de la Safor",
+  "ele": 1013,
+  "lat": 38.85986,
+  "lon": -0.26013,
+  "prov": "Alacant",
+  "comarca": "la Marina Alta",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde l'Orxa",
+    "km": 6.9,
+    "up": 728,
+    "t_up": 2.59,
+    "max_slope": 36,
+    "marked": "PR-CV 207",
+    "drive": {
+     "km": 111,
+     "min": 95
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Benitaia",
+    "km": 7.63,
+    "up": 693,
+    "t_up": 2.68,
+    "max_slope": 39,
+    "marked": "PR-CV 42",
+    "drive": {
+     "km": 107,
+     "min": 85
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Benissili",
+    "km": 8.28,
+    "up": 617,
+    "t_up": 2.68,
+    "max_slope": 40,
+    "marked": "PR-CV 42",
+    "drive": {
+     "km": 110,
+     "min": 90
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "cim-de-segaria",
+  "name": "Cim de Segària",
+  "ele": 508,
+  "lat": 38.8382,
+  "lon": -0.02087,
+  "prov": "Alacant",
+  "comarca": "la Marina Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde el Verger (20 m)",
+    "km": 6.16,
+    "up": 475,
+    "t_up": 2.02,
+    "max_slope": 27,
+    "marked": "PR-CV 415",
+    "drive": {
+     "km": 94,
+     "min": 68
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde el Verger (8 m)",
+    "km": 6.05,
+    "up": 484,
+    "t_up": 2.02,
+    "max_slope": 26,
+    "marked": "PR-CV 415",
+    "drive": {
+     "km": 92,
+     "min": 67
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Benimeli",
+    "km": 4.69,
+    "up": 545,
+    "t_up": 1.85,
+    "max_slope": 36,
+    "marked": "PR-CV 415 + SL-CV 109",
+    "drive": {
+     "km": 102,
+     "min": 76
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "xillibre",
+  "name": "Xillibre",
+  "ele": 757,
+  "lat": 38.83046,
+  "lon": -0.17727,
+  "prov": "Alacant",
+  "comarca": "la Marina Alta",
+  "tier": "destacada",
+  "prom": 169,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Pego",
+    "km": 6.84,
+    "up": 694,
+    "t_up": 2.52,
+    "max_slope": 40,
+    "drive": {
+     "km": 93,
+     "min": 70
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde la Vall d'Ebo (541 m)",
+    "km": 5.07,
+    "up": 399,
+    "t_up": 1.68,
+    "max_slope": 36,
+    "drive": {
+     "km": 103,
+     "min": 98
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde la Vall d'Ebo (391 m)",
+    "km": 6.37,
+    "up": 491,
+    "t_up": 2.09,
+    "max_slope": 32,
+    "drive": {
+     "km": 104,
+     "min": 83
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "puntal-de-la-nevera",
+  "name": "Puntal de la Nevera",
+  "ele": 1116,
+  "lat": 39.42593,
+  "lon": -0.91375,
+  "prov": "València",
+  "comarca": "la Foia de Bunyol",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Setaigües (614 m)",
+    "km": 7.54,
+    "up": 493,
+    "t_up": 2.33,
+    "max_slope": 26,
+    "marked": "GR 7",
+    "drive": {
+     "km": 49,
+     "min": 40
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Setaigües (709 m)",
+    "km": 5.7,
+    "up": 406,
+    "t_up": 1.82,
+    "max_slope": 26,
+    "marked": "GR 7",
+    "drive": {
+     "km": 52,
+     "min": 41
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Setaigües (662 m)",
+    "km": 9.06,
+    "up": 472,
+    "t_up": 2.6,
+    "max_slope": 26,
+    "marked": "GR 7",
+    "drive": {
+     "km": 61,
+     "min": 63
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "rapita",
+  "name": "Rápita",
+  "ele": 1106,
+  "lat": 39.92769,
+  "lon": -0.4131,
+  "prov": "Castelló",
+  "comarca": "l'Alt Palància",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Aín",
+    "km": 6.49,
+    "up": 593,
+    "t_up": 2.29,
+    "max_slope": 72,
+    "drive": {
+     "km": 66,
+     "min": 62
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Matet",
+    "km": 7.32,
+    "up": 596,
+    "t_up": 2.46,
+    "max_slope": 41,
+    "drive": {
+     "km": 70,
+     "min": 64
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Vilamalur",
+    "km": 7.34,
+    "up": 524,
+    "t_up": 2.34,
+    "max_slope": 35,
+    "marked": "GR 333",
+    "drive": {
+     "km": 94,
+     "min": 86
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "montcabrer",
+  "name": "Montcabrer",
+  "ele": 1390,
+  "lat": 38.75785,
+  "lon": -0.48784,
+  "prov": "Alacant",
+  "comarca": "el Comtat",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Alcoi",
+    "km": 7.0,
+    "up": 749,
+    "t_up": 2.65,
+    "max_slope": 33,
+    "marked": "GR 7",
+    "drive": {
+     "km": 109,
+     "min": 81
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Muro d'Alcoi",
+    "km": 6.36,
+    "up": 879,
+    "t_up": 2.74,
+    "max_slope": 32,
+    "marked": "PR-CV 56",
+    "drive": {
+     "km": 97,
+     "min": 74
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Bocairent",
+    "km": 6.57,
+    "up": 509,
+    "t_up": 2.16,
+    "max_slope": 40,
+    "marked": "GR 7",
+    "drive": {
+     "km": 106,
+     "min": 93
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "pico-del-cerro-cardete",
+  "name": "Pico del Cerro Cardete",
+  "ele": 1125,
+  "lat": 39.64208,
+  "lon": -1.35035,
+  "prov": "València",
+  "comarca": "la Plana d'Utiel-Requena",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 2,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Camporrobles",
+    "km": 13.15,
+    "up": 382,
+    "t_up": 3.27,
+    "max_slope": 25,
+    "marked": "GR 238 + PR-CV 293",
+    "drive": {
+     "km": 109,
+     "min": 93
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "penyes-de-s-ombria",
+  "name": "Penyes de s'Ombria",
+  "ele": 898,
+  "lat": 38.69987,
+  "lon": -0.0585,
+  "prov": "Alacant",
+  "comarca": "la Marina Baixa",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Parcent",
+    "km": 6.7,
+    "up": 723,
+    "t_up": 2.55,
+    "max_slope": 43,
+    "marked": "PR-CV 158",
+    "drive": {
+     "km": 112,
+     "min": 85
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Xaló",
+    "km": 7.47,
+    "up": 782,
+    "t_up": 2.8,
+    "max_slope": 43,
+    "drive": {
+     "km": 113,
+     "min": 85
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Tàrbena",
+    "km": 10.68,
+    "up": 671,
+    "t_up": 3.25,
+    "max_slope": 43,
+    "drive": {
+     "km": 127,
+     "min": 101
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "alto-de-santa-maria",
+  "name": "Alto de Santa María",
+  "ele": 1126,
+  "lat": 39.54347,
+  "lon": -0.91947,
+  "prov": "València",
+  "comarca": "la Serrania",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Xera (731 m)",
+    "km": 8.13,
+    "up": 396,
+    "t_up": 2.29,
+    "max_slope": 29,
+    "marked": "GR 7",
+    "drive": {
+     "km": 93,
+     "min": 109
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Xestalgar",
+    "km": 17.27,
+    "up": 954,
+    "t_up": 5.04,
+    "max_slope": 29,
+    "marked": "PR-CV 291",
+    "drive": {
+     "km": 57,
+     "min": 74
+    },
+    "diff": 3
+   },
+   {
+    "id": "C",
+    "name": "Desde Xera (456 m)",
+    "km": 11.62,
+    "up": 672,
+    "t_up": 3.44,
+    "max_slope": 29,
+    "marked": "GR 7",
+    "drive": {
+     "km": 91,
+     "min": 119
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "cremat",
+  "name": "Cremat",
+  "ele": 1242,
+  "lat": 38.60625,
+  "lon": -0.51566,
+  "prov": "Alacant",
+  "comarca": "l'Alacantí",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Xixona (885 m)",
+    "km": 5.25,
+    "up": 386,
+    "t_up": 1.69,
+    "max_slope": 25,
+    "marked": "PR-V 82",
+    "drive": {
+     "km": 135,
+     "min": 126
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Ibi",
+    "km": 6.85,
+    "up": 511,
+    "t_up": 2.22,
+    "max_slope": 38,
+    "marked": "PR-V 128 + PR-V 82",
+    "drive": {
+     "km": 124,
+     "min": 90
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Xixona (478 m)",
+    "km": 11.04,
+    "up": 802,
+    "t_up": 3.54,
+    "max_slope": 25,
+    "marked": "PR-V 82",
+    "drive": {
+     "km": 133,
+     "min": 99
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "tossal-d-en-canes",
+  "name": "Tossal d'en Canes",
+  "ele": 716,
+  "lat": 40.38686,
+  "lon": 0.18447,
+  "prov": "Castelló",
+  "comarca": "el Baix Maestrat",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde la Salzadella",
+    "km": 5.42,
+    "up": 387,
+    "t_up": 1.73,
+    "max_slope": 25,
+    "drive": {
+     "km": 128,
+     "min": 99
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Santa Magdalena de Polpís",
+    "km": 4.13,
+    "up": 207,
+    "t_up": 1.17,
+    "max_slope": 25,
+    "drive": {
+     "km": 132,
+     "min": 109
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "penya-migjorn",
+  "name": "Penya Migjorn",
+  "ele": 1226,
+  "lat": 38.53462,
+  "lon": -0.54081,
+  "prov": "Alacant",
+  "comarca": "l'Alacantí",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Xixona",
+    "km": 7.12,
+    "up": 468,
+    "t_up": 2.2,
+    "max_slope": 44,
+    "marked": "PR-V 83",
+    "drive": {
+     "km": 135,
+     "min": 126
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Tibi (550 m)",
+    "km": 4.71,
+    "up": 639,
+    "t_up": 2.01,
+    "max_slope": 38,
+    "marked": "PR-V 83",
+    "drive": {
+     "km": 145,
+     "min": 105
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Tibi (574 m)",
+    "km": 4.16,
+    "up": 616,
+    "t_up": 1.86,
+    "max_slope": 38,
+    "marked": "PR-V 83",
+    "drive": {
+     "km": 145,
+     "min": 106
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "reconco",
+  "name": "Reconco",
+  "ele": 1205,
+  "lat": 38.62971,
+  "lon": -0.71924,
+  "prov": "Alacant",
+  "comarca": "l'Alt Vinalopó",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Onil",
+    "km": 6.63,
+    "up": 323,
+    "t_up": 1.86,
+    "max_slope": 29,
+    "marked": "PR-CV 55",
+    "drive": {
+     "km": 140,
+     "min": 165
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Biar",
+    "km": 4.49,
+    "up": 449,
+    "t_up": 1.65,
+    "max_slope": 36,
+    "marked": "PR-CV 55",
+    "drive": {
+     "km": 133,
+     "min": 105
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Sanxet",
+    "km": 4.09,
+    "up": 368,
+    "t_up": 1.43,
+    "max_slope": 28,
+    "drive": {
+     "km": 134,
+     "min": 125
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "replana",
+  "name": "Replana",
+  "ele": 1229,
+  "lat": 38.5707,
+  "lon": -0.73011,
+  "prov": "Alacant",
+  "comarca": "l'Alcoià",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Castalla (735 m)",
+    "km": 6.91,
+    "up": 551,
+    "t_up": 2.3,
+    "max_slope": 26,
+    "drive": {
+     "km": 135,
+     "min": 100
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Petrer",
+    "km": 7.71,
+    "up": 745,
+    "t_up": 2.78,
+    "max_slope": 30,
+    "drive": {
+     "km": 141,
+     "min": 104
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Castalla (1018 m)",
+    "km": 9.78,
+    "up": 560,
+    "t_up": 2.89,
+    "max_slope": 36,
+    "drive": {
+     "km": 142,
+     "min": 111
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "maigmo",
+  "name": "Maigmó",
+  "ele": 1296,
+  "lat": 38.50188,
+  "lon": -0.63129,
+  "prov": "Alacant",
+  "comarca": "l'Alcoià",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Castalla",
+    "km": 6.28,
+    "up": 490,
+    "t_up": 2.07,
+    "max_slope": 56,
+    "marked": "PR-CV 31",
+    "drive": {
+     "km": 142,
+     "min": 111
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Petrer",
+    "km": 8.22,
+    "up": 731,
+    "t_up": 2.86,
+    "max_slope": 55,
+    "marked": "PR-CV 31",
+    "drive": {
+     "km": 147,
+     "min": 110
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Tibi",
+    "km": 6.12,
+    "up": 746,
+    "t_up": 2.47,
+    "max_slope": 45,
+    "drive": {
+     "km": 143,
+     "min": 102
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "menejador",
+  "name": "Menejador",
+  "ele": 1356,
+  "lat": 38.65869,
+  "lon": -0.53775,
+  "prov": "Alacant",
+  "comarca": "l'Alcoià",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Alcoi",
+    "km": 6.59,
+    "up": 465,
+    "t_up": 2.09,
+    "max_slope": 29,
+    "drive": {
+     "km": 115,
+     "min": 88
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Ibi (875 m)",
+    "km": 5.96,
+    "up": 484,
+    "t_up": 2.0,
+    "max_slope": 29,
+    "marked": "PR-V 26 + PR-V 127",
+    "drive": {
+     "km": 128,
+     "min": 99
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Ibi (736 m)",
+    "km": 6.41,
+    "up": 623,
+    "t_up": 2.32,
+    "max_slope": 32,
+    "marked": "PR-V 26 + PR-V 81",
+    "drive": {
+     "km": 124,
+     "min": 91
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "tossal-de-saragossa",
+  "name": "Tossal de Saragossa",
+  "ele": 1080,
+  "lat": 40.29004,
+  "lon": -0.00096,
+  "prov": "Castelló",
+  "comarca": "la Plana Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Mas del Pati",
+    "km": 6.79,
+    "up": 549,
+    "t_up": 2.27,
+    "max_slope": 26,
+    "marked": "GR 230",
+    "drive": {
+     "km": 120,
+     "min": 103
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde la Serra d'en Galceran (735 m)",
+    "km": 6.16,
+    "up": 378,
+    "t_up": 1.86,
+    "max_slope": 21,
+    "marked": "GR 230",
+    "drive": {
+     "km": 123,
+     "min": 115
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde la Serra d'en Galceran (547 m)",
+    "km": 6.2,
+    "up": 635,
+    "t_up": 2.3,
+    "max_slope": 43,
+    "marked": "GR 230",
+    "drive": {
+     "km": 116,
+     "min": 92
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "montcatil",
+  "name": "Montcàtil",
+  "ele": 1116,
+  "lat": 40.35964,
+  "lon": -0.13994,
+  "prov": "Castelló",
+  "comarca": "l'Alt Maestrat",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Culla (760 m)",
+    "km": 7.85,
+    "up": 499,
+    "t_up": 2.4,
+    "max_slope": 34,
+    "marked": "GR 7 + PR-CV 225.1",
+    "drive": {
+     "km": 129,
+     "min": 142
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Mas del Senyor",
+    "km": 8.54,
+    "up": 573,
+    "t_up": 2.66,
+    "max_slope": 35,
+    "marked": "PR-CV 395",
+    "drive": {
+     "km": 128,
+     "min": 102
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Culla (1049 m)",
+    "km": 5.76,
+    "up": 225,
+    "t_up": 1.53,
+    "max_slope": 22,
+    "marked": "GR 7 + PR-CV 225",
+    "drive": {
+     "km": 126,
+     "min": 112
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "tossal-de-la-nevera",
+  "name": "Tossal de la Nevera",
+  "ele": 1286,
+  "lat": 40.46779,
+  "lon": -0.02998,
+  "prov": "Castelló",
+  "comarca": "l'Alt Maestrat",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde l'Avellà",
+    "km": 6.17,
+    "up": 496,
+    "t_up": 2.06,
+    "max_slope": 29,
+    "marked": "PR-CV 410",
+    "drive": {
+     "km": 146,
+     "min": 124
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Mas del Gatellà",
+    "km": 6.11,
+    "up": 618,
+    "t_up": 2.25,
+    "max_slope": 49,
+    "drive": {
+     "km": 138,
+     "min": 114
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Ares del Maestrat",
+    "km": 8.02,
+    "up": 309,
+    "t_up": 2.12,
+    "max_slope": 19,
+    "drive": {
+     "km": 142,
+     "min": 183
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "alt-d-alfaro",
+  "name": "Alt d'Alfaro",
+  "ele": 1166,
+  "lat": 38.74867,
+  "lon": -0.24449,
+  "prov": "Alacant",
+  "comarca": "el Comtat",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Tollos",
+    "km": 5.78,
+    "up": 475,
+    "t_up": 1.95,
+    "max_slope": 37,
+    "marked": "PR-CV 168",
+    "drive": {
+     "km": 121,
+     "min": 96
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde la Vall d'Alcalà",
+    "km": 11.42,
+    "up": 616,
+    "t_up": 3.31,
+    "max_slope": 37,
+    "drive": {
+     "km": 117,
+     "min": 93
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Castell de Castells",
+    "km": 8.16,
+    "up": 696,
+    "t_up": 2.79,
+    "max_slope": 40,
+    "marked": "PR-CV 168",
+    "drive": {
+     "km": 121,
+     "min": 97
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "castell-d-aixa",
+  "name": "Castell d'Aixa",
+  "ele": 607,
+  "lat": 38.76457,
+  "lon": -0.0012,
+  "prov": "Alacant",
+  "comarca": "la Marina Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Pedreguer",
+    "km": 5.86,
+    "up": 516,
+    "t_up": 2.03,
+    "max_slope": 31,
+    "drive": {
+     "km": 100,
+     "min": 71
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Llíber",
+    "km": 5.33,
+    "up": 428,
+    "t_up": 1.78,
+    "max_slope": 45,
+    "drive": {
+     "km": 116,
+     "min": 82
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Xaló",
+    "km": 4.31,
+    "up": 403,
+    "t_up": 1.54,
+    "max_slope": 30,
+    "marked": "PR-CV 53",
+    "drive": {
+     "km": 111,
+     "min": 84
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "carrascal",
+  "name": "Carrascal",
+  "ele": 881,
+  "lat": 39.86281,
+  "lon": -0.36372,
+  "prov": "Castelló",
+  "comarca": "l'Alt Palància",
+  "tier": "destacada",
+  "prom": 156,
+  "diff": 2,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Eslida",
+    "km": 7.43,
+    "up": 780,
+    "t_up": 2.79,
+    "max_slope": 44,
+    "marked": "GR 36",
+    "drive": {
+     "km": 69,
+     "min": 56
+    },
+    "diff": 2
+   },
+   {
+    "id": "B",
+    "name": "Desde Aín",
+    "km": 8.09,
+    "up": 615,
+    "t_up": 2.64,
+    "max_slope": 44,
+    "drive": {
+     "km": 66,
+     "min": 62
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Xóvar",
+    "km": 8.61,
+    "up": 889,
+    "t_up": 3.2,
+    "max_slope": 47,
+    "drive": {
+     "km": 60,
+     "min": 54
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "mola-d-ares",
+  "name": "Mola d'Ares",
+  "ele": 1323,
+  "lat": 40.46816,
+  "lon": -0.12845,
+  "prov": "Castelló",
+  "comarca": "l'Alt Maestrat",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Ares del Maestrat (889 m)",
+    "km": 5.5,
+    "up": 449,
+    "t_up": 1.85,
+    "max_slope": 30,
+    "marked": "SL-CV 46 + SL-CV 45",
+    "drive": {
+     "km": 140,
+     "min": 122
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Ares del Maestrat (1228 m)",
+    "km": 5.16,
+    "up": 167,
+    "t_up": 1.31,
+    "max_slope": 20,
+    "marked": "PR-CV 387 + SL-CV 46",
+    "drive": {
+     "km": 142,
+     "min": 183
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Ares del Maestrat (932 m)",
+    "km": 8.74,
+    "up": 500,
+    "t_up": 2.58,
+    "max_slope": 30,
+    "marked": "SL-CV 46 + SL-CV 45",
+    "drive": {
+     "km": 139,
+     "min": 145
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "arriello",
+  "name": "Arriello",
+  "ele": 1316,
+  "lat": 40.46103,
+  "lon": -0.21632,
+  "prov": "Castelló",
+  "comarca": "els Ports",
+  "tier": "destacada",
+  "prom": 188,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Castellfort",
+    "km": 8.03,
+    "up": 286,
+    "t_up": 2.08,
+    "max_slope": 22,
+    "marked": "PR-CV 309",
+    "drive": {
+     "km": 151,
+     "min": 126
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde el Llosar",
+    "km": 7.39,
+    "up": 234,
+    "t_up": 1.87,
+    "max_slope": 25,
+    "marked": "PR-CV 309 + PR-CV 402",
+    "drive": {
+     "km": 155,
+     "min": 127
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Vilafranca",
+    "km": 8.05,
+    "up": 289,
+    "t_up": 2.09,
+    "max_slope": 32,
+    "marked": "PR-CV 402 + GR 331",
+    "drive": {
+     "km": 156,
+     "min": 134
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "despenyador",
+  "name": "Despenyador",
+  "ele": 1261,
+  "lat": 38.53294,
+  "lon": -0.67212,
+  "prov": "Alacant",
+  "comarca": "l'Alcoià",
+  "tier": "destacada",
+  "prom": 168,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Tibi",
+    "km": 7.62,
+    "up": 634,
+    "t_up": 2.58,
+    "max_slope": 56,
+    "marked": "PR-CV 31 + PR-CV 85",
+    "drive": {
+     "km": 141,
+     "min": 115
+    },
+    "diff": 2
+   },
+   {
+    "id": "B",
+    "name": "Desde Petrer (778 m)",
+    "km": 6.35,
+    "up": 519,
+    "t_up": 2.14,
+    "max_slope": 36,
+    "marked": "PR-CV 28 + PR-CV 32",
+    "drive": {
+     "km": 153,
+     "min": 136
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Petrer (722 m)",
+    "km": 8.05,
+    "up": 639,
+    "t_up": 2.67,
+    "max_slope": 38,
+    "marked": "PR-CV 32",
+    "drive": {
+     "km": 143,
+     "min": 105
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "cilla-del-sit",
+  "name": "Cilla del Sit",
+  "ele": 1147,
+  "lat": 38.47826,
+  "lon": -0.72611,
+  "prov": "Alacant",
+  "comarca": "el Vinalopó Mitjà",
+  "tier": "emblematica",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Petrer (728 m)",
+    "km": 6.47,
+    "up": 483,
+    "t_up": 2.1,
+    "max_slope": 39,
+    "marked": "PR-CV 6.5",
+    "drive": {
+     "km": 147,
+     "min": 110
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Petrer (778 m)",
+    "km": 8.5,
+    "up": 667,
+    "t_up": 2.81,
+    "max_slope": 39,
+    "drive": {
+     "km": 153,
+     "min": 136
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Novelda",
+    "km": 9.12,
+    "up": 1011,
+    "t_up": 3.51,
+    "max_slope": 43,
+    "drive": {
+     "km": 156,
+     "min": 118
+    },
+    "diff": 3
+   }
+  ]
+ },
+ {
+  "id": "alt-del-trencall",
+  "name": "Alt del Trencall",
+  "ele": 506,
+  "lat": 39.23366,
+  "lon": -0.61591,
+  "prov": "València",
+  "comarca": "la Ribera Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Benimodo",
+    "km": 9.37,
+    "up": 421,
+    "t_up": 2.58,
+    "max_slope": 23,
+    "drive": {
+     "km": 43,
+     "min": 51
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Carlet",
+    "km": 8.67,
+    "up": 426,
+    "t_up": 2.44,
+    "max_slope": 23,
+    "drive": {
+     "km": 35,
+     "min": 34
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Tous",
+    "km": 10.05,
+    "up": 412,
+    "t_up": 2.7,
+    "max_slope": 23,
+    "drive": {
+     "km": 48,
+     "min": 64
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "cabezo-la-cruz",
+  "name": "Cabezo la Cruz",
+  "ele": 1708,
+  "lat": 40.24418,
+  "lon": -0.54782,
+  "prov": "Castelló",
+  "comarca": "l'Alt Millars",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Masía de los Morrones",
+    "km": 9.3,
+    "up": 730,
+    "t_up": 3.08,
+    "max_slope": 26,
+    "drive": {
+     "km": 131,
+     "min": 108
+    },
+    "diff": 2
+   },
+   {
+    "id": "B",
+    "name": "Desde Nogueruelas (1715 m)",
+    "km": 10.41,
+    "up": 331,
+    "t_up": 2.63,
+    "max_slope": 29,
+    "drive": {
+     "km": 131,
+     "min": 145
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Nogueruelas (1196 m)",
+    "km": 11.01,
+    "up": 650,
+    "t_up": 3.29,
+    "max_slope": 29,
+    "drive": {
+     "km": 120,
+     "min": 97
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "fita",
+  "name": "Fita",
+  "ele": 1649,
+  "lat": 40.26406,
+  "lon": -0.38339,
+  "prov": "Castelló",
+  "comarca": "l'Alt Maestrat",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Puertomingalvo",
+    "km": 6.96,
+    "up": 392,
+    "t_up": 2.05,
+    "max_slope": 23,
+    "drive": {
+     "km": 136,
+     "min": 156
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Vistabella del Maestrat",
+    "km": 7.04,
+    "up": 437,
+    "t_up": 2.14,
+    "max_slope": 18,
+    "marked": "PR-V 66",
+    "drive": {
+     "km": 143,
+     "min": 138
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Vilafermosa",
+    "km": 6.37,
+    "up": 649,
+    "t_up": 2.35,
+    "max_slope": 37,
+    "marked": "PR-V 66 + GR 7",
+    "drive": {
+     "km": 141,
+     "min": 220
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "muela",
+  "name": "Muela",
+  "ele": 1545,
+  "lat": 39.95814,
+  "lon": -1.0682,
+  "prov": "València",
+  "comarca": "la Serrania",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde La Torre",
+    "km": 8.91,
+    "up": 460,
+    "t_up": 2.55,
+    "max_slope": 39,
+    "drive": {
+     "km": 100,
+     "min": 106
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Corcolilla",
+    "km": 9.99,
+    "up": 564,
+    "t_up": 2.94,
+    "max_slope": 39,
+    "drive": {
+     "km": 92,
+     "min": 79
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Ares dels Oms",
+    "km": 13.44,
+    "up": 754,
+    "t_up": 3.95,
+    "max_slope": 24,
+    "marked": "GR 37",
+    "drive": {
+     "km": 102,
+     "min": 120
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "moratilla-grande",
+  "name": "Moratilla Grande",
+  "ele": 1404,
+  "lat": 39.93145,
+  "lon": -1.03763,
+  "prov": "València",
+  "comarca": "la Serrania",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde La Torre",
+    "km": 9.34,
+    "up": 341,
+    "t_up": 2.44,
+    "max_slope": 23,
+    "drive": {
+     "km": 100,
+     "min": 106
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Titaigües",
+    "km": 10.54,
+    "up": 535,
+    "t_up": 3.0,
+    "max_slope": 28,
+    "marked": "GR 37",
+    "drive": {
+     "km": 91,
+     "min": 85
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Corcolilla",
+    "km": 6.16,
+    "up": 365,
+    "t_up": 1.84,
+    "max_slope": 23,
+    "drive": {
+     "km": 92,
+     "min": 79
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "santa-barbara-monte-pina",
+  "name": "Santa Barbara - Monte Pina",
+  "ele": 1404,
+  "lat": 40.02866,
+  "lon": -0.62852,
+  "prov": "Castelló",
+  "comarca": "l'Alt Palància",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde la Font de la Reina",
+    "km": 6.15,
+    "up": 571,
+    "t_up": 2.18,
+    "max_slope": 36,
+    "drive": {
+     "km": 97,
+     "min": 84
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Vilanova de Viver",
+    "km": 4.48,
+    "up": 513,
+    "t_up": 1.75,
+    "max_slope": 27,
+    "drive": {
+     "km": 94,
+     "min": 84
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Montant",
+    "km": 4.33,
+    "up": 542,
+    "t_up": 1.77,
+    "max_slope": 33,
+    "marked": "GR 7",
+    "drive": {
+     "km": 88,
+     "min": 93
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "recingle-alt",
+  "name": "Recingle Alt",
+  "ele": 1359,
+  "lat": 38.7061,
+  "lon": -0.30766,
+  "prov": "Alacant",
+  "comarca": "el Comtat",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Fageca",
+    "km": 7.22,
+    "up": 800,
+    "t_up": 2.78,
+    "max_slope": 41,
+    "marked": "PR-CV 182 + PR-CV 23",
+    "drive": {
+     "km": 123,
+     "min": 100
+    },
+    "diff": 2
+   },
+   {
+    "id": "B",
+    "name": "Desde l'Abdet",
+    "km": 7.14,
+    "up": 745,
+    "t_up": 2.67,
+    "max_slope": 64,
+    "drive": {
+     "km": 127,
+     "min": 98
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Quatretondeta",
+    "km": 4.29,
+    "up": 753,
+    "t_up": 2.11,
+    "max_slope": 57,
+    "drive": {
+     "km": 114,
+     "min": 91
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "puntassa",
+  "name": "Puntassa",
+  "ele": 1334,
+  "lat": 40.70849,
+  "lon": 0.07744,
+  "prov": "Castelló",
+  "comarca": "el Baix Maestrat",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde la Pobla de Benifassà",
+    "km": 7.9,
+    "up": 320,
+    "t_up": 2.11,
+    "max_slope": 24,
+    "drive": {
+     "km": 200,
+     "min": 162
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Pena-roja de Tastavins (1008 m)",
+    "km": 4.38,
+    "up": 340,
+    "t_up": 1.44,
+    "max_slope": 31,
+    "drive": {
+     "km": 213,
+     "min": 282
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Pena-roja de Tastavins (812 m)",
+    "km": 10.23,
+    "up": 637,
+    "t_up": 3.11,
+    "max_slope": 31,
+    "marked": "PR-TE 157",
+    "drive": {
+     "km": 205,
+     "min": 186
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "s-plans",
+  "name": "S Plans",
+  "ele": 1330,
+  "lat": 38.63594,
+  "lon": -0.42849,
+  "prov": "Alacant",
+  "comarca": "l'Alcoià",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Alcoi (683 m)",
+    "km": 8.0,
+    "up": 713,
+    "t_up": 2.79,
+    "max_slope": 35,
+    "drive": {
+     "km": 112,
+     "min": 81
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Xixona",
+    "km": 6.63,
+    "up": 352,
+    "t_up": 1.91,
+    "max_slope": 19,
+    "drive": {
+     "km": 120,
+     "min": 87
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Alcoi (917 m)",
+    "km": 10.76,
+    "up": 766,
+    "t_up": 3.43,
+    "max_slope": 37,
+    "drive": {
+     "km": 115,
+     "min": 88
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "tis",
+  "name": "Tis",
+  "ele": 1310,
+  "lat": 40.179,
+  "lon": -0.4278,
+  "prov": "Castelló",
+  "comarca": "l'Alt Millars",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Vilafermosa (896 m)",
+    "km": 7.84,
+    "up": 678,
+    "t_up": 2.7,
+    "max_slope": 33,
+    "marked": "GR 7",
+    "drive": {
+     "km": 125,
+     "min": 135
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Vilafermosa (776 m)",
+    "km": 5.56,
+    "up": 636,
+    "t_up": 2.17,
+    "max_slope": 46,
+    "marked": "GR 7",
+    "drive": {
+     "km": 122,
+     "min": 113
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Vilafermosa (998 m)",
+    "km": 11.31,
+    "up": 692,
+    "t_up": 3.42,
+    "max_slope": 33,
+    "marked": "GR 7",
+    "drive": {
+     "km": 141,
+     "min": 220
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "pena-del-aguila",
+  "name": "Peña del Águila",
+  "ele": 1304,
+  "lat": 39.6483,
+  "lon": -1.15397,
+  "prov": "València",
+  "comarca": "la Plana d'Utiel-Requena",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Benaixeve (857 m)",
+    "km": 6.55,
+    "up": 470,
+    "t_up": 2.09,
+    "max_slope": 25,
+    "drive": {
+     "km": 104,
+     "min": 86
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Utiel",
+    "km": 6.74,
+    "up": 407,
+    "t_up": 2.03,
+    "max_slope": 22,
+    "marked": "PR-CV 177.3",
+    "drive": {
+     "km": 88,
+     "min": 66
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Benaixeve (851 m)",
+    "km": 8.74,
+    "up": 502,
+    "t_up": 2.59,
+    "max_slope": 25,
+    "drive": {
+     "km": 104,
+     "min": 84
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "cabezo",
+  "name": "Cabezo",
+  "ele": 1298,
+  "lat": 39.86656,
+  "lon": -0.98552,
+  "prov": "València",
+  "comarca": "la Serrania",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 2,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Toixa",
+    "km": 13.26,
+    "up": 744,
+    "t_up": 3.89,
+    "max_slope": 39,
+    "drive": {
+     "km": 79,
+     "min": 93
+    },
+    "diff": 3
+   },
+   {
+    "id": "B",
+    "name": "Desde Corcolilla",
+    "km": 11.32,
+    "up": 543,
+    "t_up": 3.17,
+    "max_slope": 39,
+    "marked": "GR 37",
+    "drive": {
+     "km": 92,
+     "min": 79
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "moleto",
+  "name": "Moletó",
+  "ele": 1295,
+  "lat": 40.53339,
+  "lon": -0.06837,
+  "prov": "Castelló",
+  "comarca": "els Ports",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Ares del Maestrat",
+    "km": 11.32,
+    "up": 348,
+    "t_up": 2.84,
+    "max_slope": 21,
+    "marked": "GR 7",
+    "drive": {
+     "km": 150,
+     "min": 151
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde l'Avellà",
+    "km": 12.05,
+    "up": 586,
+    "t_up": 3.39,
+    "max_slope": 58,
+    "marked": "GR 331",
+    "drive": {
+     "km": 146,
+     "min": 124
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Catí",
+    "km": 14.1,
+    "up": 593,
+    "t_up": 3.81,
+    "max_slope": 58,
+    "marked": "GR 331",
+    "drive": {
+     "km": 143,
+     "min": 119
+    },
+    "diff": 3
+   }
+  ]
+ },
+ {
+  "id": "turmell",
+  "name": "Turmell",
+  "ele": 1276,
+  "lat": 40.57737,
+  "lon": 0.09004,
+  "prov": "Castelló",
+  "comarca": "els Ports",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Morella",
+    "km": 7.1,
+    "up": 631,
+    "t_up": 2.47,
+    "max_slope": 33,
+    "marked": "GR 331",
+    "drive": {
+     "km": 151,
+     "min": 120
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Vallibona",
+    "km": 7.76,
+    "up": 781,
+    "t_up": 2.85,
+    "max_slope": 43,
+    "drive": {
+     "km": 184,
+     "min": 170
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Xert",
+    "km": 12.0,
+    "up": 837,
+    "t_up": 3.79,
+    "max_slope": 23,
+    "drive": {
+     "km": 144,
+     "min": 113
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "cerro-de-palomeras",
+  "name": "Cerro de Palomeras",
+  "ele": 1261,
+  "lat": 39.0696,
+  "lon": -1.21248,
+  "prov": "València",
+  "comarca": "la Vall de Cofrents-Aiora",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Aiora (978 m)",
+    "km": 2.64,
+    "up": 284,
+    "t_up": 1.0,
+    "max_slope": 35,
+    "drive": {
+     "km": 142,
+     "min": 113
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Aiora (895 m)",
+    "km": 10.41,
+    "up": 469,
+    "t_up": 2.86,
+    "max_slope": 35,
+    "drive": {
+     "km": 145,
+     "min": 117
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "tejo",
+  "name": "Tejo",
+  "ele": 1248,
+  "lat": 39.51888,
+  "lon": -0.98796,
+  "prov": "València",
+  "comarca": "la Plana d'Utiel-Requena",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Setaigües",
+    "km": 10.37,
+    "up": 546,
+    "t_up": 2.98,
+    "max_slope": 27,
+    "drive": {
+     "km": 52,
+     "min": 42
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde El Rebollar",
+    "km": 11.46,
+    "up": 541,
+    "t_up": 3.19,
+    "max_slope": 19,
+    "marked": "GR 238",
+    "drive": {
+     "km": 59,
+     "min": 45
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Xera",
+    "km": 13.71,
+    "up": 896,
+    "t_up": 4.23,
+    "max_slope": 48,
+    "marked": "PR-CV 102",
+    "drive": {
+     "km": 91,
+     "min": 119
+    },
+    "diff": 3
+   }
+  ]
+ },
+ {
+  "id": "alto-de-la-capilla-del-fraile",
+  "name": "Alto de la Capilla del Fraile",
+  "ele": 1238,
+  "lat": 38.49673,
+  "lon": -1.01367,
+  "prov": "Alacant",
+  "comarca": "el Vinalopó Mitjà",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Iecla (703 m)",
+    "km": 4.11,
+    "up": 521,
+    "t_up": 1.69,
+    "max_slope": 36,
+    "drive": {
+     "km": 140,
+     "min": 99
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde el Carxe",
+    "km": 15.03,
+    "up": 617,
+    "t_up": 4.04,
+    "max_slope": 24,
+    "drive": {
+     "km": 148,
+     "min": 102
+    },
+    "diff": 3
+   },
+   {
+    "id": "C",
+    "name": "Desde Iecla (549 m)",
+    "km": 14.95,
+    "up": 745,
+    "t_up": 4.23,
+    "max_slope": 32,
+    "drive": {
+     "km": 134,
+     "min": 98
+    },
+    "diff": 3
+   }
+  ]
+ },
+ {
+  "id": "penya-alta-cim-de-l-aixorta",
+  "name": "Penya Alta - Cim de l'Aixortà",
+  "ele": 1219,
+  "lat": 38.69491,
+  "lon": -0.16282,
+  "prov": "Alacant",
+  "comarca": "la Marina Baixa",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Castell de Castells",
+    "km": 5.68,
+    "up": 591,
+    "t_up": 2.12,
+    "max_slope": 33,
+    "marked": "PR-CV 149",
+    "drive": {
+     "km": 125,
+     "min": 103
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Bolulla",
+    "km": 7.55,
+    "up": 945,
+    "t_up": 3.09,
+    "max_slope": 44,
+    "marked": "PR-CV 49",
+    "drive": {
+     "km": 142,
+     "min": 103
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Callosa d'en Sarrià",
+    "km": 7.45,
+    "up": 999,
+    "t_up": 3.15,
+    "max_slope": 48,
+    "drive": {
+     "km": 138,
+     "min": 100
+    },
+    "diff": 3
+   }
+  ]
+ },
+ {
+  "id": "ponotx",
+  "name": "Ponotx",
+  "ele": 1183,
+  "lat": 38.61286,
+  "lon": -0.1763,
+  "prov": "Alacant",
+  "comarca": "la Marina Baixa",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Finestrat",
+    "km": 6.88,
+    "up": 772,
+    "t_up": 2.66,
+    "max_slope": 40,
+    "marked": "PR-CV 13 + PR-CV 289",
+    "drive": {
+     "km": 149,
+     "min": 107
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Polop",
+    "km": 5.89,
+    "up": 680,
+    "t_up": 2.31,
+    "max_slope": 31,
+    "marked": "PR-CV 17 + PR-CV 13",
+    "drive": {
+     "km": 144,
+     "min": 111
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Benimantell",
+    "km": 8.04,
+    "up": 661,
+    "t_up": 2.71,
+    "max_slope": 31,
+    "marked": "PR-CV 12 + PR-CV 17",
+    "drive": {
+     "km": 139,
+     "min": 121
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "los-cinco-pinos",
+  "name": "Los Cinco Pinos",
+  "ele": 1177,
+  "lat": 39.58354,
+  "lon": -1.01408,
+  "prov": "València",
+  "comarca": "la Plana d'Utiel-Requena",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Loriguilla",
+    "km": 5.91,
+    "up": 251,
+    "t_up": 1.6,
+    "max_slope": 14,
+    "marked": "PR-CV 101",
+    "drive": {
+     "km": 93,
+     "min": 136
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Xera (706 m)",
+    "km": 5.63,
+    "up": 479,
+    "t_up": 1.92,
+    "max_slope": 27,
+    "marked": "PR-CV 101",
+    "drive": {
+     "km": 86,
+     "min": 73
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Xera (706 m)",
+    "km": 12.81,
+    "up": 633,
+    "t_up": 3.62,
+    "max_slope": 35,
+    "marked": "PR-CV 101",
+    "drive": {
+     "km": 79,
+     "min": 85
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "alto-de-las-palomas",
+  "name": "Alto de las Palomas",
+  "ele": 1156,
+  "lat": 39.99189,
+  "lon": -0.57515,
+  "prov": "Castelló",
+  "comarca": "l'Alt Palància",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Caudiel",
+    "km": 6.79,
+    "up": 520,
+    "t_up": 2.23,
+    "max_slope": 34,
+    "drive": {
+     "km": 71,
+     "min": 59
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Figueres",
+    "km": 9.88,
+    "up": 541,
+    "t_up": 2.88,
+    "max_slope": 30,
+    "drive": {
+     "km": 80,
+     "min": 73
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Benafer",
+    "km": 9.5,
+    "up": 561,
+    "t_up": 2.83,
+    "max_slope": 34,
+    "drive": {
+     "km": 70,
+     "min": 56
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "pico-de-caroche",
+  "name": "Pico de Caroche",
+  "ele": 1126,
+  "lat": 39.08963,
+  "lon": -0.91417,
+  "prov": "València",
+  "comarca": "la Vall de Cofrents-Aiora",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 2,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Bicorb",
+    "km": 13.76,
+    "up": 618,
+    "t_up": 3.78,
+    "max_slope": 22,
+    "marked": "GR 7",
+    "drive": {
+     "km": 102,
+     "min": 118
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "esparreguera",
+  "name": "Esparreguera",
+  "ele": 1089,
+  "lat": 40.29733,
+  "lon": -0.08607,
+  "prov": "Castelló",
+  "comarca": "l'Alt Maestrat",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde els Rossildos",
+    "km": 6.34,
+    "up": 658,
+    "t_up": 2.36,
+    "max_slope": 32,
+    "drive": {
+     "km": 113,
+     "min": 87
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Culla (638 m)",
+    "km": 10.08,
+    "up": 560,
+    "t_up": 2.95,
+    "max_slope": 28,
+    "drive": {
+     "km": 126,
+     "min": 122
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Culla (338 m)",
+    "km": 11.05,
+    "up": 761,
+    "t_up": 3.48,
+    "max_slope": 32,
+    "drive": {
+     "km": 107,
+     "min": 81
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "puntal-gros",
+  "name": "Puntal Gros",
+  "ele": 1086,
+  "lat": 38.32919,
+  "lon": -0.97184,
+  "prov": "Alacant",
+  "comarca": "el Baix Segura",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 2,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde la Canalosa",
+    "km": 10.41,
+    "up": 760,
+    "t_up": 3.35,
+    "max_slope": 32,
+    "drive": {
+     "km": 176,
+     "min": 132
+    },
+    "diff": 2
+   },
+   {
+    "id": "B",
+    "name": "Desde la Romana",
+    "km": 10.28,
+    "up": 761,
+    "t_up": 3.33,
+    "max_slope": 32,
+    "drive": {
+     "km": 165,
+     "min": 124
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Monòver",
+    "km": 16.03,
+    "up": 867,
+    "t_up": 4.65,
+    "max_slope": 36,
+    "drive": {
+     "km": 158,
+     "min": 134
+    },
+    "diff": 3
+   }
+  ]
+ },
+ {
+  "id": "pico-martes",
+  "name": "Pico Martés",
+  "ele": 1080,
+  "lat": 39.32464,
+  "lon": -0.94615,
+  "prov": "València",
+  "comarca": "la Foia de Bunyol",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 2,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Poblado Cortes-La Muela (502 m)",
+    "km": 13.81,
+    "up": 875,
+    "t_up": 4.22,
+    "max_slope": 35,
+    "marked": "GR 7",
+    "drive": {
+     "km": 73,
+     "min": 75
+    },
+    "diff": 3
+   },
+   {
+    "id": "B",
+    "name": "Desde Poblado Cortes-La Muela (462 m)",
+    "km": 15.97,
+    "up": 962,
+    "t_up": 4.8,
+    "max_slope": 35,
+    "marked": "GR 7",
+    "drive": {
+     "km": 74,
+     "min": 76
+    },
+    "diff": 3
+   },
+   {
+    "id": "C",
+    "name": "Desde Colonia Cinto de los Albates",
+    "km": 13.12,
+    "up": 740,
+    "t_up": 3.86,
+    "max_slope": 19,
+    "drive": {
+     "km": 58,
+     "min": 56
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "puntal-del-conejo",
+  "name": "Puntal del Conejo",
+  "ele": 1063,
+  "lat": 39.14076,
+  "lon": -1.14763,
+  "prov": "València",
+  "comarca": "la Vall de Cofrents-Aiora",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Xarafull (634 m)",
+    "km": 6.2,
+    "up": 412,
+    "t_up": 1.93,
+    "max_slope": 26,
+    "drive": {
+     "km": 120,
+     "min": 94
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Xalans",
+    "km": 11.01,
+    "up": 480,
+    "t_up": 3.0,
+    "max_slope": 21,
+    "drive": {
+     "km": 118,
+     "min": 102
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Xarafull (621 m)",
+    "km": 9.78,
+    "up": 507,
+    "t_up": 2.8,
+    "max_slope": 25,
+    "drive": {
+     "km": 116,
+     "min": 86
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "penya-del-salt-de-la-mort",
+  "name": "Penya del Salt de la Mort",
+  "ele": 1055,
+  "lat": 38.36241,
+  "lon": -0.96755,
+  "prov": "Alacant",
+  "comarca": "el Vinalopó Mitjà",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Monòver",
+    "km": 4.8,
+    "up": 284,
+    "t_up": 1.43,
+    "max_slope": 36,
+    "drive": {
+     "km": 158,
+     "min": 134
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde la Romana",
+    "km": 9.88,
+    "up": 708,
+    "t_up": 3.16,
+    "max_slope": 56,
+    "drive": {
+     "km": 163,
+     "min": 120
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde el Pinós",
+    "km": 14.26,
+    "up": 722,
+    "t_up": 4.06,
+    "max_slope": 36,
+    "drive": {
+     "km": 154,
+     "min": 108
+    },
+    "diff": 3
+   }
+  ]
+ },
+ {
+  "id": "castellano",
+  "name": "Castellano",
+  "ele": 1055,
+  "lat": 39.75817,
+  "lon": -0.91561,
+  "prov": "València",
+  "comarca": "la Serrania",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Calles (387 m)",
+    "km": 7.33,
+    "up": 703,
+    "t_up": 2.64,
+    "max_slope": 25,
+    "marked": "PR-CV 92",
+    "drive": {
+     "km": 68,
+     "min": 68
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Figueroles de Domenyo",
+    "km": 7.94,
+    "up": 394,
+    "t_up": 2.25,
+    "max_slope": 18,
+    "drive": {
+     "km": 65,
+     "min": 58
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Calles (512 m)",
+    "km": 7.18,
+    "up": 562,
+    "t_up": 2.37,
+    "max_slope": 28,
+    "drive": {
+     "km": 69,
+     "min": 59
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "serreta",
+  "name": "Serreta",
+  "ele": 1052,
+  "lat": 38.68795,
+  "lon": -0.43644,
+  "prov": "Alacant",
+  "comarca": "l'Alcoià",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Alcoi (568 m)",
+    "km": 5.78,
+    "up": 536,
+    "t_up": 2.05,
+    "max_slope": 35,
+    "drive": {
+     "km": 110,
+     "min": 81
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Alcoi (634 m)",
+    "km": 4.99,
+    "up": 466,
+    "t_up": 1.77,
+    "max_slope": 35,
+    "drive": {
+     "km": 111,
+     "min": 81
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Alcoi (544 m)",
+    "km": 8.58,
+    "up": 602,
+    "t_up": 2.72,
+    "max_slope": 35,
+    "drive": {
+     "km": 108,
+     "min": 79
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "cocoll",
+  "name": "Cocoll",
+  "ele": 1048,
+  "lat": 38.73622,
+  "lon": -0.14927,
+  "prov": "Alacant",
+  "comarca": "la Marina Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Benigembla",
+    "km": 6.36,
+    "up": 728,
+    "t_up": 2.49,
+    "max_slope": 30,
+    "marked": "PR-CV 427",
+    "drive": {
+     "km": 113,
+     "min": 89
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Castell de Castells",
+    "km": 9.39,
+    "up": 584,
+    "t_up": 2.85,
+    "max_slope": 23,
+    "marked": "PR-CV 427",
+    "drive": {
+     "km": 124,
+     "min": 100
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Benimaurell",
+    "km": 10.08,
+    "up": 904,
+    "t_up": 3.52,
+    "max_slope": 50,
+    "marked": "PR-CV 427",
+    "drive": {
+     "km": 109,
+     "min": 91
+    },
+    "diff": 3
+   }
+  ]
+ },
+ {
+  "id": "sierra-del-fraile",
+  "name": "Sierra del Fraile",
+  "ele": 1043,
+  "lat": 38.61192,
+  "lon": -0.77833,
+  "prov": "Alacant",
+  "comarca": "l'Alt Vinalopó",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Villena",
+    "km": 9.18,
+    "up": 587,
+    "t_up": 2.81,
+    "max_slope": 34,
+    "drive": {
+     "km": 123,
+     "min": 88
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Biar",
+    "km": 6.06,
+    "up": 348,
+    "t_up": 1.79,
+    "max_slope": 32,
+    "drive": {
+     "km": 133,
+     "min": 105
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Sanxet",
+    "km": 8.53,
+    "up": 359,
+    "t_up": 2.3,
+    "max_slope": 32,
+    "drive": {
+     "km": 134,
+     "min": 125
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "alt-de-la-caseta-de-la-neu",
+  "name": "Alt de la Caseta de la Neu",
+  "ele": 1015,
+  "lat": 38.75477,
+  "lon": -0.33743,
+  "prov": "Alacant",
+  "comarca": "el Comtat",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Tollos",
+    "km": 7.88,
+    "up": 304,
+    "t_up": 2.08,
+    "max_slope": 17,
+    "drive": {
+     "km": 121,
+     "min": 96
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Millena",
+    "km": 4.28,
+    "up": 423,
+    "t_up": 1.56,
+    "max_slope": 32,
+    "drive": {
+     "km": 107,
+     "min": 82
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde la Vall d'Alcalà",
+    "km": 15.86,
+    "up": 533,
+    "t_up": 4.06,
+    "max_slope": 19,
+    "drive": {
+     "km": 117,
+     "min": 93
+    },
+    "diff": 3
+   }
+  ]
+ },
+ {
+  "id": "ascensio",
+  "name": "Ascensió",
+  "ele": 1012,
+  "lat": 38.73559,
+  "lon": -0.75632,
+  "prov": "Alacant",
+  "comarca": "l'Alt Vinalopó",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Banyeres de Mariola",
+    "km": 8.81,
+    "up": 351,
+    "t_up": 2.35,
+    "max_slope": 15,
+    "marked": "PR-CV 52",
+    "drive": {
+     "km": 102,
+     "min": 79
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "penya-blanca-de-la-mallada-de-figuera",
+  "name": "Penya Blanca de la Mallada de Figuera",
+  "ele": 954,
+  "lat": 38.7782,
+  "lon": -0.16783,
+  "prov": "Alacant",
+  "comarca": "la Marina Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Benimaurell (543 m)",
+    "km": 7.22,
+    "up": 482,
+    "t_up": 2.25,
+    "max_slope": 32,
+    "marked": "PR-CV 181",
+    "drive": {
+     "km": 109,
+     "min": 91
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Benimaurell (503 m)",
+    "km": 9.82,
+    "up": 739,
+    "t_up": 3.2,
+    "max_slope": 40,
+    "marked": "PR-CV 147",
+    "drive": {
+     "km": 105,
+     "min": 90
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Castell de Castells",
+    "km": 9.23,
+    "up": 598,
+    "t_up": 2.84,
+    "max_slope": 25,
+    "drive": {
+     "km": 121,
+     "min": 97
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "pico-de-la-sierrecilla",
+  "name": "Pico de la Sierrecilla",
+  "ele": 911,
+  "lat": 39.21181,
+  "lon": -1.1307,
+  "prov": "València",
+  "comarca": "la Vall de Cofrents-Aiora",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Cofrents",
+    "km": 8.9,
+    "up": 529,
+    "t_up": 2.66,
+    "max_slope": 33,
+    "drive": {
+     "km": 104,
+     "min": 79
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Xalans (386 m)",
+    "km": 6.7,
+    "up": 450,
+    "t_up": 2.09,
+    "max_slope": 33,
+    "drive": {
+     "km": 111,
+     "min": 93
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Xalans (433 m)",
+    "km": 7.58,
+    "up": 457,
+    "t_up": 2.28,
+    "max_slope": 33,
+    "drive": {
+     "km": 109,
+     "min": 82
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "tossal-del-xarpolar",
+  "name": "Tossal del Xarpolar",
+  "ele": 901,
+  "lat": 38.80622,
+  "lon": -0.28536,
+  "prov": "Alacant",
+  "comarca": "la Marina Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde la Vall d'Alcalà",
+    "km": 4.09,
+    "up": 274,
+    "t_up": 1.28,
+    "max_slope": 37,
+    "drive": {
+     "km": 117,
+     "min": 92
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Benitaia (278 m)",
+    "km": 10.27,
+    "up": 842,
+    "t_up": 3.46,
+    "max_slope": 43,
+    "marked": "PR-CV 43",
+    "drive": {
+     "km": 103,
+     "min": 81
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Benitaia (318 m)",
+    "km": 11.23,
+    "up": 839,
+    "t_up": 3.65,
+    "max_slope": 48,
+    "drive": {
+     "km": 104,
+     "min": 82
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "cabeco-ventos",
+  "name": "Cabeçó Ventós",
+  "ele": 900,
+  "lat": 38.47634,
+  "lon": -0.61463,
+  "prov": "Alacant",
+  "comarca": "l'Alcoià",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Agost",
+    "km": 6.13,
+    "up": 569,
+    "t_up": 2.17,
+    "max_slope": 37,
+    "drive": {
+     "km": 153,
+     "min": 114
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Tibi",
+    "km": 8.09,
+    "up": 605,
+    "t_up": 2.63,
+    "max_slope": 40,
+    "drive": {
+     "km": 148,
+     "min": 113
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Sant Vicent del Raspeig",
+    "km": 8.37,
+    "up": 596,
+    "t_up": 2.67,
+    "max_slope": 40,
+    "drive": {
+     "km": 155,
+     "min": 118
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "pico-de-alcola",
+  "name": "Pico de Alcola",
+  "ele": 894,
+  "lat": 39.17657,
+  "lon": -1.01341,
+  "prov": "València",
+  "comarca": "la Vall de Cofrents-Aiora",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Xalans",
+    "km": 6.56,
+    "up": 149,
+    "t_up": 1.56,
+    "max_slope": 14,
+    "drive": {
+     "km": 115,
+     "min": 96
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Teresa de Cofrents",
+    "km": 10.39,
+    "up": 381,
+    "t_up": 2.71,
+    "max_slope": 32,
+    "drive": {
+     "km": 124,
+     "min": 99
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Cofrents",
+    "km": 11.18,
+    "up": 508,
+    "t_up": 3.08,
+    "max_slope": 22,
+    "drive": {
+     "km": 106,
+     "min": 80
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "cabeco-de-la-sal",
+  "name": "Cabeço de la Sal",
+  "ele": 890,
+  "lat": 38.38549,
+  "lon": -1.0237,
+  "prov": "Alacant",
+  "comarca": "el Vinalopó Mitjà",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Monòver",
+    "km": 8.74,
+    "up": 270,
+    "t_up": 2.2,
+    "max_slope": 22,
+    "marked": "GR 7",
+    "drive": {
+     "km": 158,
+     "min": 134
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde el Pinós (586 m)",
+    "km": 2.96,
+    "up": 301,
+    "t_up": 1.09,
+    "max_slope": 21,
+    "drive": {
+     "km": 154,
+     "min": 108
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde el Pinós (571 m)",
+    "km": 3.29,
+    "up": 306,
+    "t_up": 1.17,
+    "max_slope": 31,
+    "drive": {
+     "km": 152,
+     "min": 107
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "alto-de-la-covalta",
+  "name": "Alto de la Covalta",
+  "ele": 882,
+  "lat": 38.80587,
+  "lon": -0.49888,
+  "prov": "Alacant",
+  "comarca": "el Comtat",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Albaida",
+    "km": 6.7,
+    "up": 515,
+    "t_up": 2.2,
+    "max_slope": 28,
+    "marked": "PR-CV 121",
+    "drive": {
+     "km": 87,
+     "min": 65
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Agullent",
+    "km": 4.72,
+    "up": 223,
+    "t_up": 1.31,
+    "max_slope": 17,
+    "drive": {
+     "km": 88,
+     "min": 101
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Alfafara",
+    "km": 8.56,
+    "up": 294,
+    "t_up": 2.2,
+    "max_slope": 31,
+    "drive": {
+     "km": 89,
+     "min": 92
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "cabrera",
+  "name": "Cabrera",
+  "ele": 873,
+  "lat": 38.53869,
+  "lon": -0.86585,
+  "prov": "Alacant",
+  "comarca": "l'Alt Vinalopó",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Villena",
+    "km": 6.99,
+    "up": 337,
+    "t_up": 1.96,
+    "max_slope": 37,
+    "drive": {
+     "km": 127,
+     "min": 94
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Saix (529 m)",
+    "km": 6.89,
+    "up": 339,
+    "t_up": 1.94,
+    "max_slope": 25,
+    "drive": {
+     "km": 137,
+     "min": 101
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Saix (486 m)",
+    "km": 5.91,
+    "up": 505,
+    "t_up": 2.02,
+    "max_slope": 70,
+    "drive": {
+     "km": 132,
+     "min": 91
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "safra",
+  "name": "Safra",
+  "ele": 852,
+  "lat": 38.39891,
+  "lon": -0.87969,
+  "prov": "Alacant",
+  "comarca": "el Vinalopó Mitjà",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde el Manyar",
+    "km": 7.18,
+    "up": 348,
+    "t_up": 2.01,
+    "max_slope": 24,
+    "drive": {
+     "km": 157,
+     "min": 110
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Monòver",
+    "km": 8.07,
+    "up": 445,
+    "t_up": 2.36,
+    "max_slope": 19,
+    "drive": {
+     "km": 150,
+     "min": 105
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde la Romana",
+    "km": 8.21,
+    "up": 433,
+    "t_up": 2.36,
+    "max_slope": 24,
+    "drive": {
+     "km": 163,
+     "min": 120
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "alt-de-la-bola",
+  "name": "Alt de la Bola",
+  "ele": 848,
+  "lat": 38.47234,
+  "lon": -0.87702,
+  "prov": "Alacant",
+  "comarca": "el Vinalopó Mitjà",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Elda (611 m)",
+    "km": 7.09,
+    "up": 276,
+    "t_up": 1.88,
+    "max_slope": 18,
+    "marked": "PR-CV 25",
+    "drive": {
+     "km": 138,
+     "min": 101
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Saix",
+    "km": 6.89,
+    "up": 310,
+    "t_up": 1.89,
+    "max_slope": 18,
+    "drive": {
+     "km": 137,
+     "min": 101
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Elda (403 m)",
+    "km": 6.91,
+    "up": 426,
+    "t_up": 2.09,
+    "max_slope": 34,
+    "marked": "GR 7 + PR-CV 195",
+    "drive": {
+     "km": 144,
+     "min": 105
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "alt-de-camara",
+  "name": "Alt de Camara",
+  "ele": 841,
+  "lat": 38.49863,
+  "lon": -0.83564,
+  "prov": "Alacant",
+  "comarca": "el Vinalopó Mitjà",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Petrer",
+    "km": 7.29,
+    "up": 423,
+    "t_up": 2.16,
+    "max_slope": 52,
+    "drive": {
+     "km": 138,
+     "min": 96
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Elda (452 m)",
+    "km": 5.71,
+    "up": 491,
+    "t_up": 1.96,
+    "max_slope": 52,
+    "drive": {
+     "km": 138,
+     "min": 94
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Elda (403 m)",
+    "km": 5.76,
+    "up": 407,
+    "t_up": 1.83,
+    "max_slope": 53,
+    "marked": "PR-CV 25",
+    "drive": {
+     "km": 144,
+     "min": 105
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "vella",
+  "name": "Vella",
+  "ele": 838,
+  "lat": 38.27791,
+  "lon": -0.85861,
+  "prov": "Alacant",
+  "comarca": "el Baix Vinalopó",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Albatera",
+    "km": 7.15,
+    "up": 618,
+    "t_up": 2.46,
+    "max_slope": 41,
+    "marked": "PR-CV 110",
+    "drive": {
+     "km": 185,
+     "min": 140
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Crevillent (140 m)",
+    "km": 7.11,
+    "up": 725,
+    "t_up": 2.63,
+    "max_slope": 42,
+    "marked": "PR-CV-109 + PR-CV 108",
+    "drive": {
+     "km": 174,
+     "min": 124
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Crevillent (413 m)",
+    "km": 3.61,
+    "up": 402,
+    "t_up": 1.39,
+    "max_slope": 41,
+    "marked": "PR-CV 110",
+    "drive": {
+     "km": 183,
+     "min": 153
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "montegordo",
+  "name": "Montegordo",
+  "ele": 837,
+  "lat": 40.40003,
+  "lon": 0.03235,
+  "prov": "Castelló",
+  "comarca": "l'Alt Maestrat",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Sant Pau",
+    "km": 11.0,
+    "up": 395,
+    "t_up": 2.86,
+    "max_slope": 28,
+    "drive": {
+     "km": 120,
+     "min": 94
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Albocàsser (587 m)",
+    "km": 9.06,
+    "up": 354,
+    "t_up": 2.4,
+    "max_slope": 28,
+    "drive": {
+     "km": 126,
+     "min": 108
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Albocàsser (501 m)",
+    "km": 5.6,
+    "up": 343,
+    "t_up": 1.69,
+    "max_slope": 28,
+    "drive": {
+     "km": 126,
+     "min": 101
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "sierra-de-la-villa",
+  "name": "Sierra de la Villa",
+  "ele": 780,
+  "lat": 38.64023,
+  "lon": -0.84848,
+  "prov": "Alacant",
+  "comarca": "l'Alt Vinalopó",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Biar",
+    "km": 8.76,
+    "up": 245,
+    "t_up": 2.16,
+    "max_slope": 39,
+    "drive": {
+     "km": 129,
+     "min": 93
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Villena",
+    "km": 5.98,
+    "up": 270,
+    "t_up": 1.65,
+    "max_slope": 44,
+    "drive": {
+     "km": 123,
+     "min": 88
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde La Puentecilla",
+    "km": 5.94,
+    "up": 275,
+    "t_up": 1.65,
+    "max_slope": 45,
+    "drive": {
+     "km": 121,
+     "min": 85
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "cormo-de-la-penya",
+  "name": "Cormo de la Penya",
+  "ele": 726,
+  "lat": 40.09088,
+  "lon": -0.05984,
+  "prov": "Castelló",
+  "comarca": "la Plana Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Borriol",
+    "km": 6.9,
+    "up": 377,
+    "t_up": 2.01,
+    "max_slope": 31,
+    "marked": "GR 33 + PR-CV 460",
+    "drive": {
+     "km": 86,
+     "min": 84
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde la Pobla Tornesa",
+    "km": 7.39,
+    "up": 478,
+    "t_up": 2.28,
+    "max_slope": 33,
+    "drive": {
+     "km": 88,
+     "min": 66
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Vilafamés",
+    "km": 5.11,
+    "up": 442,
+    "t_up": 1.76,
+    "max_slope": 31,
+    "drive": {
+     "km": 87,
+     "min": 77
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "alt-del-pi",
+  "name": "Alt del Pi",
+  "ele": 716,
+  "lat": 39.69107,
+  "lon": -0.40026,
+  "prov": "València",
+  "comarca": "el Camp de Túria",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Albalat dels Tarongers (133 m)",
+    "km": 6.73,
+    "up": 606,
+    "t_up": 2.36,
+    "max_slope": 30,
+    "marked": "PR-CV 369 + GR 10",
+    "drive": {
+     "km": 34,
+     "min": 32
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde la Cortina",
+    "km": 6.21,
+    "up": 547,
+    "t_up": 2.15,
+    "max_slope": 39,
+    "drive": {
+     "km": 28,
+     "min": 32
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Albalat dels Tarongers (362 m)",
+    "km": 7.41,
+    "up": 579,
+    "t_up": 2.45,
+    "max_slope": 54,
+    "marked": "GR 10 + PR-CV 318",
+    "drive": {
+     "km": 42,
+     "min": 58
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "alt-de-petillo",
+  "name": "Alt de Petillo",
+  "ele": 675,
+  "lat": 38.5628,
+  "lon": -0.24474,
+  "prov": "Alacant",
+  "comarca": "la Marina Baixa",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde la Vila Joiosa (115 m)",
+    "km": 5.71,
+    "up": 572,
+    "t_up": 2.09,
+    "max_slope": 25,
+    "drive": {
+     "km": 150,
+     "min": 103
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde la Vila Joiosa (73 m)",
+    "km": 7.46,
+    "up": 641,
+    "t_up": 2.56,
+    "max_slope": 33,
+    "drive": {
+     "km": 146,
+     "min": 102
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Finestrat",
+    "km": 3.88,
+    "up": 505,
+    "t_up": 1.62,
+    "max_slope": 37,
+    "drive": {
+     "km": 147,
+     "min": 103
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "cerro-de-loriguilla",
+  "name": "Cerro de Loriguilla",
+  "ele": 658,
+  "lat": 39.69096,
+  "lon": -0.90572,
+  "prov": "València",
+  "comarca": "el Camp de Túria",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Xulilla (281 m)",
+    "km": 7.34,
+    "up": 264,
+    "t_up": 1.91,
+    "max_slope": 19,
+    "drive": {
+     "km": 63,
+     "min": 53
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Xulilla (345 m)",
+    "km": 9.59,
+    "up": 333,
+    "t_up": 2.47,
+    "max_slope": 20,
+    "drive": {
+     "km": 59,
+     "min": 49
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Domenyo",
+    "km": 9.79,
+    "up": 276,
+    "t_up": 2.42,
+    "max_slope": 19,
+    "drive": {
+     "km": 70,
+     "min": 68
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "cerro-escorpion",
+  "name": "Cerro Escorpión",
+  "ele": 656,
+  "lat": 39.71201,
+  "lon": -1.0033,
+  "prov": "València",
+  "comarca": "la Serrania",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Domenyo (323 m)",
+    "km": 6.7,
+    "up": 240,
+    "t_up": 1.74,
+    "max_slope": 25,
+    "drive": {
+     "km": 70,
+     "min": 68
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Domenyo (520 m)",
+    "km": 6.75,
+    "up": 199,
+    "t_up": 1.68,
+    "max_slope": 25,
+    "drive": {
+     "km": 77,
+     "min": 72
+    },
+    "diff": 0
+   },
+   {
+    "id": "C",
+    "name": "Desde Xelva",
+    "km": 8.62,
+    "up": 243,
+    "t_up": 2.13,
+    "max_slope": 16,
+    "marked": "PR-CV 92",
+    "drive": {
+     "km": 71,
+     "min": 59
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "pena-de-orihuela",
+  "name": "Peña de Orihuela",
+  "ele": 634,
+  "lat": 38.09903,
+  "lon": -0.99924,
+  "prov": "Alacant",
+  "comarca": "el Baix Segura",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Oriola",
+    "km": 7.66,
+    "up": 754,
+    "t_up": 2.79,
+    "max_slope": 39,
+    "marked": "PR-CV 59",
+    "drive": {
+     "km": 201,
+     "min": 136
+    },
+    "diff": 2
+   },
+   {
+    "id": "B",
+    "name": "Desde Barrio Los Villagordos",
+    "km": 5.22,
+    "up": 617,
+    "t_up": 2.07,
+    "max_slope": 50,
+    "marked": "PR-CV 59",
+    "drive": {
+     "km": 203,
+     "min": 141
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde L'Apareguda",
+    "km": 3.0,
+    "up": 533,
+    "t_up": 1.49,
+    "max_slope": 45,
+    "marked": "PR-CV 59",
+    "drive": {
+     "km": 201,
+     "min": 150
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "ratlla",
+  "name": "Ratlla",
+  "ele": 625,
+  "lat": 39.10313,
+  "lon": -0.31086,
+  "prov": "València",
+  "comarca": "la Ribera Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Alzira",
+    "km": 6.99,
+    "up": 687,
+    "t_up": 2.54,
+    "max_slope": 42,
+    "marked": "GR 236 + PR-CV 304",
+    "drive": {
+     "km": 46,
+     "min": 49
+    },
+    "diff": 2
+   },
+   {
+    "id": "B",
+    "name": "Desde Tavernes de la Valldigna",
+    "km": 7.11,
+    "up": 697,
+    "t_up": 2.58,
+    "max_slope": 37,
+    "marked": "PR-CV 304",
+    "drive": {
+     "km": 57,
+     "min": 45
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Llaurí",
+    "km": 6.74,
+    "up": 623,
+    "t_up": 2.39,
+    "max_slope": 40,
+    "marked": "PR-CV 304",
+    "drive": {
+     "km": 50,
+     "min": 39
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "monti",
+  "name": "Montí",
+  "ele": 612,
+  "lat": 39.94583,
+  "lon": -0.28938,
+  "prov": "Castelló",
+  "comarca": "la Plana Baixa",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Onda",
+    "km": 6.27,
+    "up": 434,
+    "t_up": 1.98,
+    "max_slope": 43,
+    "drive": {
+     "km": 67,
+     "min": 79
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Artana",
+    "km": 8.75,
+    "up": 593,
+    "t_up": 2.74,
+    "max_slope": 43,
+    "drive": {
+     "km": 64,
+     "min": 55
+    },
+    "diff": 2
+   },
+   {
+    "id": "C",
+    "name": "Desde Veo",
+    "km": 8.47,
+    "up": 543,
+    "t_up": 2.6,
+    "max_slope": 46,
+    "drive": {
+     "km": 79,
+     "min": 67
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "pico-del-aguila",
+  "name": "Pico del Águila",
+  "ele": 605,
+  "lat": 38.09411,
+  "lon": -1.01726,
+  "prov": "Alacant",
+  "comarca": "el Baix Segura",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Barrio Los Villagordos",
+    "km": 8.35,
+    "up": 845,
+    "t_up": 3.08,
+    "max_slope": 50,
+    "marked": "PR-CV 59",
+    "drive": {
+     "km": 203,
+     "min": 141
+    },
+    "diff": 2
+   },
+   {
+    "id": "B",
+    "name": "Desde Oriola",
+    "km": 10.8,
+    "up": 981,
+    "t_up": 3.8,
+    "max_slope": 45,
+    "marked": "PR-CV 59",
+    "drive": {
+     "km": 201,
+     "min": 136
+    },
+    "diff": 3
+   },
+   {
+    "id": "C",
+    "name": "Desde Santomera",
+    "km": 5.59,
+    "up": 548,
+    "t_up": 2.03,
+    "max_slope": 36,
+    "drive": {
+     "km": 198,
+     "min": 145
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "alt-de-la-xopada",
+  "name": "Alt de la Xopada",
+  "ele": 605,
+  "lat": 39.02511,
+  "lon": -0.32612,
+  "prov": "València",
+  "comarca": "la Safor",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde la Drova",
+    "km": 7.09,
+    "up": 244,
+    "t_up": 1.82,
+    "max_slope": 25,
+    "marked": "PR-CV 60 + PR-CV 50",
+    "drive": {
+     "km": 79,
+     "min": 65
+    },
+    "diff": 0
+   },
+   {
+    "id": "B",
+    "name": "Desde Simat de la Valldigna (68 m)",
+    "km": 3.08,
+    "up": 491,
+    "t_up": 1.43,
+    "max_slope": 51,
+    "marked": "PR-CV 50",
+    "drive": {
+     "km": 63,
+     "min": 53
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Simat de la Valldigna (313 m)",
+    "km": 2.88,
+    "up": 256,
+    "t_up": 1.0,
+    "max_slope": 51,
+    "marked": "PR-CV 50",
+    "drive": {
+     "km": 68,
+     "min": 60
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "dit-d-olta",
+  "name": "Dit d'Oltà",
+  "ele": 590,
+  "lat": 38.66118,
+  "lon": 0.0147,
+  "prov": "Alacant",
+  "comarca": "la Marina Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Calp",
+    "km": 6.74,
+    "up": 614,
+    "t_up": 2.37,
+    "max_slope": 51,
+    "drive": {
+     "km": 123,
+     "min": 89
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Pinos",
+    "km": 6.17,
+    "up": 462,
+    "t_up": 2.0,
+    "max_slope": 44,
+    "drive": {
+     "km": 121,
+     "min": 87
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Cases de Bèrnia",
+    "km": 9.51,
+    "up": 561,
+    "t_up": 2.84,
+    "max_slope": 59,
+    "drive": {
+     "km": 129,
+     "min": 96
+    },
+    "diff": 2
+   }
+  ]
+ },
+ {
+  "id": "campanilles",
+  "name": "Campanilles",
+  "ele": 572,
+  "lat": 40.30591,
+  "lon": 0.29261,
+  "prov": "Castelló",
+  "comarca": "el Baix Maestrat",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Peníscola",
+    "km": 7.03,
+    "up": 542,
+    "t_up": 2.31,
+    "max_slope": 33,
+    "marked": "PR-CV 431",
+    "drive": {
+     "km": 122,
+     "min": 96
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Alcalà de Xivert",
+    "km": 7.06,
+    "up": 541,
+    "t_up": 2.31,
+    "max_slope": 33,
+    "marked": "PR-CV 431",
+    "drive": {
+     "km": 122,
+     "min": 96
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Alcossebre",
+    "km": 6.09,
+    "up": 340,
+    "t_up": 1.78,
+    "max_slope": 22,
+    "marked": "PR-CV 431",
+    "drive": {
+     "km": 124,
+     "min": 100
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "pico-del-aguila",
+  "name": "Pico del Águila",
+  "ele": 568,
+  "lat": 38.12144,
+  "lon": -0.90076,
+  "prov": "Alacant",
+  "comarca": "el Baix Segura",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 1,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Barrio Los Villagordos",
+    "km": 8.35,
+    "up": 845,
+    "t_up": 3.08,
+    "max_slope": 50,
+    "marked": "PR-CV 59",
+    "drive": {
+     "km": 203,
+     "min": 141
+    },
+    "diff": 2
+   },
+   {
+    "id": "B",
+    "name": "Desde Oriola",
+    "km": 10.8,
+    "up": 981,
+    "t_up": 3.8,
+    "max_slope": 45,
+    "marked": "PR-CV 59",
+    "drive": {
+     "km": 201,
+     "min": 136
+    },
+    "diff": 3
+   },
+   {
+    "id": "C",
+    "name": "Desde Santomera",
+    "km": 5.59,
+    "up": 548,
+    "t_up": 2.03,
+    "max_slope": 36,
+    "drive": {
+     "km": 198,
+     "min": 145
+    },
+    "diff": 1
+   }
+  ]
+ },
+ {
+  "id": "alt-de-sant-pascual",
+  "name": "Alt de Sant Pascual",
+  "ele": 555,
+  "lat": 38.38092,
+  "lon": -0.65641,
+  "prov": "Alacant",
+  "comarca": "l'Alacantí",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Agost",
+    "km": 7.38,
+    "up": 455,
+    "t_up": 2.23,
+    "max_slope": 31,
+    "drive": {
+     "km": 163,
+     "min": 130
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde el Rebolledo",
+    "km": 8.7,
+    "up": 395,
+    "t_up": 2.4,
+    "max_slope": 19,
+    "drive": {
+     "km": 164,
+     "min": 111
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Montfort",
+    "km": 4.76,
+    "up": 289,
+    "t_up": 1.43,
+    "max_slope": 19,
+    "drive": {
+     "km": 161,
+     "min": 110
+    },
+    "diff": 0
+   }
+  ]
+ },
+ {
+  "id": "tossal-gros",
+  "name": "Tossal Gros",
+  "ele": 518,
+  "lat": 38.75974,
+  "lon": -0.05043,
+  "prov": "Alacant",
+  "comarca": "la Marina Alta",
+  "tier": "destacada",
+  "prom": 200,
+  "diff": 0,
+  "routes": [
+   {
+    "id": "A",
+    "name": "Desde Parcent",
+    "km": 6.83,
+    "up": 302,
+    "t_up": 1.87,
+    "max_slope": 36,
+    "marked": "PR-CV 158 + SL-CV 193",
+    "drive": {
+     "km": 119,
+     "min": 92
+    },
+    "diff": 1
+   },
+   {
+    "id": "B",
+    "name": "Desde Xaló",
+    "km": 7.93,
+    "up": 344,
+    "t_up": 2.16,
+    "max_slope": 36,
+    "marked": "SL-CV 193",
+    "drive": {
+     "km": 113,
+     "min": 85
+    },
+    "diff": 1
+   },
+   {
+    "id": "C",
+    "name": "Desde Alcalalí",
+    "km": 3.02,
+    "up": 287,
+    "t_up": 1.08,
+    "max_slope": 36,
+    "marked": "SL-CV 193",
+    "drive": {
+     "km": 110,
+     "min": 82
+    },
+    "diff": 0
    }
   ]
  }
