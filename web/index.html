@@ -89,6 +89,16 @@
           <button class="btn" id="frame" type="button">Ver todo</button>
           <button class="btn" id="offBtn" type="button" title="Guarda el mapa Topográfico IGN y el relieve de esta zona para verlos sin cobertura">Guardar mapa offline</button>
         </div>
+        <div class="dyn">
+          <div class="glabel"><span>Ruta nueva desde otra salida</span></div>
+          <div class="actions">
+            <button class="btn" id="fromGps" type="button">Desde mi ubicación</button>
+            <button class="btn" id="fromMap" type="button" aria-pressed="false">Marcar salida en el mapa</button>
+            <button class="btn main" id="saveRt" type="button" hidden>Guardar ruta</button>
+          </div>
+          <p class="note" id="dynMsg" role="status" hidden></p>
+          <div id="saved" hidden><div class="glabel"><span>Guardadas en este dispositivo</span></div><ul id="savedList"></ul></div>
+        </div>
         <div id="more">
           <details class="cmp" id="cmpBox" open><summary>Comparar rutas</summary><table id="cmp"></table></details>
           <div class="grp">
@@ -108,6 +118,9 @@
 <!-- lógica del sol y color por pendiente compartida con el visor del Montgó (hay que servir la raíz del repo) -->
 <script src="../scripts/shared.js"></script>
 <script src="clusters.js"></script>
+<script src="metrics.js"></script>
+<script src="router.js"></script>
+<script src="store.js"></script>
 <script src="app.js"></script>
 <script src="track.js"></script>
 <script src="offline.js"></script>

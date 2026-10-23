@@ -1,7 +1,7 @@
 /* Mapa 3D a pantalla completa; panel izquierdo con dos estados (lista de cimas / ruta de una cima) y perfil abajo. */
 :root {
   --bg: #eef1ee; --panel: #f9faf8; --fg: #17231c; --mut: #5b6b61; --line: #d5ddd7; --accent: #2b6e3f;
-  --rA: #e8590c; --rB: #1c7ed6; --rC: #9c36b5; --rT: #d6336c;
+  --rA: #e8590c; --rB: #1c7ed6; --rC: #9c36b5; --rT: #d6336c; --rX: #0c8599;
   --display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
   --body: 'Barlow', system-ui, sans-serif;
   --mono: 'IBM Plex Mono', ui-monospace, monospace;
@@ -10,7 +10,7 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #101713; --panel: #19231d; --fg: #e6eee8; --mut: #93a399; --line: #2c3a31; --accent: #6cc487;
-    --rA: #ff8a3d; --rB: #5aa9f5; --rC: #c77ddc; --rT: #ff6b9a; color-scheme: dark;
+    --rA: #ff8a3d; --rB: #5aa9f5; --rC: #c77ddc; --rT: #ff6b9a; --rX: #3bc9db; color-scheme: dark;
   }
 }
 * { box-sizing: border-box; }
@@ -71,6 +71,7 @@ h1 { font: 700 26px/1 var(--display); letter-spacing: .02em; margin: 0; text-tra
 #peakView.compact .more-btn::after { content: ' ▾'; }
 #peakView.compact #more { display: none; }
 .tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.tabs:has(> :nth-child(4)) { grid-template-columns: repeat(4, 1fr); }
 .tab { appearance: none; cursor: pointer; text-align: left; padding: 6px 8px 7px; border-radius: 7px; background: transparent;
        border: 1px solid var(--line); border-top: 4px solid var(--c); min-width: 0; }
 .tab b { display: block; font: 700 18px/1.1 var(--display); letter-spacing: .03em; }
@@ -133,6 +134,10 @@ input[type=range] { width: 100%; margin: 0; accent-color: var(--accent); }
 #tracksList { list-style: none; margin: 0; padding: 0; max-height: 40vh; overflow: auto; }
 #tracksList li { display: flex; gap: 5px; align-items: center; padding: 4px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
 #tracksList li:last-child { border-bottom: 0; }
+.dyn { margin-bottom: 12px; } .dyn .actions { margin-bottom: 6px; } #fromMap[aria-pressed="true"] { border-color: var(--rX); color: var(--rX); }
+#savedList { list-style: none; margin: 0; padding: 0; }
+#savedList li { display: flex; gap: 5px; align-items: center; padding: 4px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+#savedList li > span { flex: 1; min-width: 0; } #savedList small { display: block; color: var(--mut); font-size: 11px; }
 #tracksList li > span { flex: 1; min-width: 0; }
 
 /* comparativa plegable */

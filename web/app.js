@@ -135,19 +135,18 @@ function pin(color, label) {
   const d = document.createElement('i'); d.style.setProperty('--d', color); el.appendChild(d);
   return el;
 }
-function addRoutes() {
-  KEYS.forEach(k => {
-    map.addSource('trk-' + k, { type: 'geojson', data: geo(k), lineMetrics: true });
-    map.addLayer({ id: 'case-' + k, type: 'line', source: 'trk-' + k, layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#fff', 'line-width': 7 } });
-    map.addLayer({ id: 'line-' + k, type: 'line', source: 'trk-' + k, layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': routeColor(k), 'line-width': 4 } });
-  });
+function addRoute(k) {
+  map.addSource('trk-' + k, { type: 'geojson', data: geo(k), lineMetrics: true });
+  map.addLayer({ id: 'case-' + k, type: 'line', source: 'trk-' + k, layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#fff', 'line-width': 7 } });
+  map.addLayer({ id: 'line-' + k, type: 'line', source: 'trk-' + k, layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': routeColor(k), 'line-width': 4 } });
   if (typeof Track !== 'undefined') Track.raise();   // mi track y mi posición por encima de las rutas
 }
+function removeRoute(k) {
+  ['line-', 'case-'].forEach(p => { if (map.getLayer(p + k)) map.removeLayer(p + k); });
+  if (map.getSource('trk-' + k)) map.removeSource('trk-' + k);
+}
 function removeRoutes() {
-  KEYS.forEach(k => {
-    ['line-', 'case-'].forEach(p => { if (map.getLayer(p + k)) map.removeLayer(p + k); });
-    if (map.getSource('trk-' + k)) map.removeSource('trk-' + k);
-  });
+  KEYS.forEach(removeRoute);
   markers.forEach(m => m.remove()); markers = [];
   if (hoverMk) { hoverMk.remove(); hoverMk = null; }
 }
@@ -161,7 +160,8 @@ function select(k) {
   stopFly(); cur = k;
   const r = ROUTES[k];
   document.querySelectorAll('.tab').forEach(b => b.setAttribute('aria-pressed', b.dataset.k === k));
-  $('name').textContent = r.name + (r.marked ? ' · ' + r.marked : '') + (r.warn?.length ? ' · ⚠ salida por revisar' : '');
+  $('name').textContent = r.name + (r.marked ? ' · ' + r.marked : '') + (r.warn?.length ? ' · ⚠ salida por revisar' : '') +
+    (r.generated ? ` · generada con ${r.engine}, sin revisar` : '');
   $('stats').innerHTML = [
     ['Distancia', String(r.km).replace('.', ',') + ' km'], ['Desnivel', '+' + r.up + ' m'], ['Cima', P.ele + ' m'],
     ['Subida', fmtH(r.t_up)], ['Bajada', fmtH(r.t_dn)], ['Dificultad', GRADES[r.diff]],
@@ -220,7 +220,7 @@ const METRICS = [
 ];
 function renderTable() {
   const rs = KEYS.map(k => ROUTES[k]);
-  const head = `<thead><tr><th></th>${rs.map(r => `<th style="--c:var(--r${r.id})">${r.id}</th>`).join('')}</tr></thead>`;
+  const head = `<thead><tr><th></th>${rs.map(r => `<th style="--c:var(--r${r.id})">${r.id === 'X' ? 'Nueva' : r.id}</th>`).join('')}</tr></thead>`;
   const body = METRICS.map(([label, get, fmt, rule]) => {
     const vals = rs.map(get), nums = vals.filter(v => typeof v === 'number');
     const bestV = rule && nums.length > 1 && new Set(nums).size > 1 ? Math[rule](...nums) : null;
@@ -361,9 +361,74 @@ $('doneBtn').onclick = () => {
 };
 $('back').onclick = () => { location.hash = '#/'; };
 
+/* ---- ruta nueva al vuelo desde un punto de salida (router.js) y rutas guardadas en el dispositivo (store.js) ---- */
+let picking = false;
+function renderTabs() {
+  $('tabs').innerHTML = KEYS.map(k => `<button class="tab" type="button" data-k="${k}" style="--c:var(--r${k})" aria-pressed="false"><b>${k === 'X' ? 'Nueva' : 'Ruta ' + k}</b><span>${String(ROUTES[k].km).replace('.', ',')} km</span></button>`).join('');
+}
+function dynMsg(t) { $('dynMsg').textContent = t || ''; $('dynMsg').hidden = !t; }
+function setPicking(on) {
+  picking = on; map.getCanvas().style.cursor = on ? 'crosshair' : '';
+  $('fromMap').setAttribute('aria-pressed', on);
+  if (on && narrow()) setSheet(true);
+}
+function setDynamic(r) {   // la ruta generada ocupa la pestaña 'X' y sustituye a la anterior
+  stopFly();
+  if (ROUTES.X) removeRoute('X'); else KEYS.push('X');
+  r.total = r.dist[r.dist.length - 1]; ROUTES.X = r;
+  renderTabs(); renderTable(); addRoute('X'); select('X'); frameAll(1500);
+  $('saveRt').hidden = !!r.saved;
+}
+async function planFrom(start, name) {
+  const id = P.id;
+  if (!navigator.onLine) return dynMsg('Sin conexión: las rutas nuevas necesitan red. Las guardadas sí se ven offline.');
+  dynMsg('Calculando ruta…');
+  try {
+    const r = await Router.plan(start, P, name, dynMsg);
+    if (!P || P.id !== id) return;
+    setDynamic(r); dynMsg(`Calculada con ${r.engine}${r.warn ? '. ⚠ La salida queda lejos de cualquier senda' : ''}. Contrasta el trazado con el terreno.`);
+  } catch (e) { dynMsg('No se pudo calcular la ruta: ' + e.message); }
+}
+$('fromGps').onclick = () => {
+  setPicking(false);
+  if (!navigator.geolocation) return dynMsg('Este navegador no da la ubicación.');
+  dynMsg('Buscando tu ubicación…');
+  navigator.geolocation.getCurrentPosition(p => planFrom([p.coords.longitude, p.coords.latitude], 'Desde mi ubicación'),
+    e => dynMsg(e.code === 1 ? 'Sin permiso para usar tu ubicación.' : 'No se pudo obtener tu ubicación.'),{ enableHighAccuracy: true, timeout: 20000, maximumAge: 60000 });
+};
+$('fromMap').onclick = () => { setPicking(!picking); dynMsg(picking ? 'Toca el mapa donde quieras empezar a andar.' : ''); };
+map.on('click', e => {
+  if (!picking || !P) return;
+  setPicking(false);
+  if (narrow()) setSheet(false);
+  planFrom([e.lngLat.lng, e.lngLat.lat], 'Desde el punto marcado');
+});
+$('saveRt').onclick = async () => {
+  const { total, ...r } = ROUTES.X;
+  try { await RouteStore.save(P.id, r); } catch (e) { return dynMsg('No se pudo guardar en este navegador.'); }
+  ROUTES.X.saved = true; $('saveRt').hidden = true; renderSaved();
+  dynMsg('Ruta guardada en este dispositivo.');
+  if (!$('offBtn').hidden) saveOffline().catch(() => {});   // y el mapa de la zona, para usarla sin cobertura
+};
+async function renderSaved() {
+  const id = P.id, es = await RouteStore.list(id).catch(() => []);
+  if (!P || P.id !== id) return;
+  $('saved').hidden = !es.length;
+  $('savedList').innerHTML = es.map(e => `<li data-id="${e.id}"><span>${esc(e.route.name)} · ${String(e.route.km).replace('.', ',')} km · +${e.route.up} m
+    <small>${new Date(e.t).toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' })}</small></span>
+    <button type="button" class="rbtn" data-act="view">Ver</button><button type="button" class="rbtn" data-act="gpx">GPX</button><button type="button" class="rbtn" data-act="del" aria-label="Borrar">✕</button></li>`).join('');
+  $('savedList').onclick = ev => {
+    const b = ev.target.closest('button'); if (!b) return;
+    const e = es.find(x => x.id === b.closest('li').dataset.id);
+    if (b.dataset.act === 'view') { setDynamic({ ...e.route, saved: true }); dynMsg(''); }
+    else if (b.dataset.act === 'gpx') RouteStore.gpx(e, P.name);
+    else if (confirm('¿Borrar esta ruta guardada?')) RouteStore.del(e.id).then(renderSaved);
+  };
+}
+
 /* ====================== vistas ====================== */
 function showHome() {
-  stopFly(); removeRoutes();
+  stopFly(); removeRoutes(); setPicking(false);
   P = null; ROUTES = {}; KEYS = [];
   document.body.classList.remove('in-peak');
   clusters?.setEnabled(true);
@@ -388,11 +453,12 @@ async function showPeak(id) {
   document.title = `${P.name} · Cims valencians`;
   $('pname').textContent = P.name;
   $('psub').innerHTML = `${P.ele} m · ${esc(P.comarca)} · ${esc(P.prov)}<br>${badges(peak)}${peak.prom ? `<span class="mut">prominencia ${peak.prom >= 200 && P.prom_min ? '≥ ' : ''}${peak.prom} m</span>` : ''}`;
-  $('tabs').innerHTML = KEYS.map(k => `<button class="tab" type="button" data-k="${k}" style="--c:var(--r${k})" aria-pressed="false"><b>Ruta ${k}</b><span>${String(ROUTES[k].km).replace('.', ',')} km</span></button>`).join('');
+  renderTabs();
   $('note').textContent = `Rutas calculadas sobre OpenStreetMap (pesan más las sendas PR/GR/SL) y altitudes ${P.routes[0].dem || 'EU-DEM 25 m'}: no son grabaciones GPS. Tiempos con Naismith, sin paradas. Contrasta con el estado real de la senda.`;
-  syncDone(); renderTable();
+  setPicking(false); dynMsg(''); $('saveRt').hidden = true; $('saved').hidden = true;
+  syncDone(); renderTable(); renderSaved();
   sunAt(P.lat, P.lon);
-  addRoutes(); select(KEYS[0]);
+  KEYS.forEach(addRoute); select(KEYS[0]);
   frameAll(2400);
 }
 async function route() {
