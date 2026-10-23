@@ -42,6 +42,8 @@ for oid in map(int, sys.argv[1:]):
     pid = slug(name)
     if any(q["id"] == pid for q in peaks):   # homónimos (p. ej. varios «Pico del Águila»): se distinguen por comarca
         pid += "-" + slug(comarca)
+        if any(q["id"] == pid for q in peaks):   # misma comarca también: se añade la altura
+            pid += f"-{int(round(c['ele']))}"
     peaks.append({"id": pid, "name": name, "ele": int(round(c["ele"])), "lat": c["lat"], "lon": c["lon"],
                   "prov": prov, "comarca": comarca, "osm": oid, "prom": c["prom"], "prom_min": c["prom_min"], "fama": c["fama"]})
     print(f"+ {peaks[-1]['id']:<24} {name} {c['ele']:.0f} m  {prov} / {comarca}")

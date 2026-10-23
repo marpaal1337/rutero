@@ -1,5 +1,4 @@
 import json, math, os, time, urllib.request
-import numpy as np
 CACHE = "data/elev_cache.json"
 def _key(p): return f"{p[0]:.5f},{p[1]:.5f}"
 TZ = 13   # AWS Terrarium z13 ≈ 15 m/píxel; sin límite de consultas (EU-DEM vía opentopodata admite ~1000 llamadas al día)
@@ -8,6 +7,7 @@ _tiles = {}
 
 def _tile(x, y):
     if (x, y) not in _tiles:
+        import numpy as np   # solo con ELEV_SOURCE=terrarium: la fuente por defecto sigue siendo solo biblioteca estándar
         from PIL import Image
         path = f"data/cimas/dem/{TZ}_{x}_{y}.png"
         os.makedirs("data/cimas/dem", exist_ok=True)

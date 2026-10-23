@@ -45,7 +45,7 @@ Web estática en `web/` (MapLibre), con **un solo mapa 3D**: la vista regional m
 
 Para verla en local hay que servir la **raíz del repositorio** (la web carga `scripts/shared.js`): `python -m http.server` y abrir `/web/`. `index.html` de la raíz redirige ahí (GitHub Pages). El visor antiguo solo del Montgó sigue en `out/visor_3d.html`.
 
-Pipeline (solo biblioteca estándar; no necesita networkx ni matplotlib):
+Pipeline (solo biblioteca estándar; no necesita networkx ni matplotlib. Solo `ELEV_SOURCE=terrarium`, que saca las altitudes de teselas AWS Terrarium en lugar de EU-DEM, requiere además numpy y Pillow):
 1. `data/cimas/peaks.json`: catálogo de cimas (coordenadas y altura verificadas en OSM).
 2. `python scripts/cimas_fetch.py [id…]`: descarga de Overpass la red de sendas, las relaciones de senderismo y los puntos de interés (`data/cimas/*_osm.json`, no se versiona).
 3. `python scripts/cimas_candidates.py <id>`: propone salidas candidatas por sector de orientación para elegir rutas.
