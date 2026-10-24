@@ -184,6 +184,7 @@ function select(k) {
   });
   if (hoverMk) hoverMk.remove();
   hoverMk = new maplibregl.Marker({ element: pin(routeColor(k)) }).setLngLat([r.pts[0][0], r.pts[0][1]]);
+  gpsKm = null; progKm = 0;
   drawProfile();
 }
 $('tabs').addEventListener('click', e => { const b = e.target.closest('.tab'); if (b) select(b.dataset.k); });
@@ -203,6 +204,17 @@ $('sheetBtn').addEventListener('click', () => setSheet(!$('side').classList.cont
 function setCtl(open) { $('mapctl').classList.toggle('open', open); $('ctlBtn').setAttribute('aria-expanded', open); }
 $('ctlBtn').addEventListener('click', () => setCtl(!$('mapctl').classList.contains('open')));
 document.addEventListener('pointerdown', e => { if (!e.target.closest('#mapctl')) setCtl(false); });
+
+/* modo navegar: mientras grabas o sigues un track, la hoja se pliega y el perfil crece (lo emite track.js) */
+let sheetBeforeNav = false;
+addEventListener('track:mode', e => {
+  const on = e.detail;
+  if (on === $('app').classList.contains('nav')) return;
+  $('app').classList.toggle('nav', on);
+  if (!narrow()) return;
+  if (on) { sheetBeforeNav = !$('side').classList.contains('min'); setSheet(true); }
+  else if (sheetBeforeNav) setSheet(false);
+});
 
 /* ---- comparativa ---- */
 const METRICS = [
@@ -231,7 +243,7 @@ function renderTable() {
 
 /* ---- perfil de elevación ---- */
 const tip = $('tip'), box = $('svgbox'), M = { l: 44, r: 16, t: 14, b: 22 };
-let PR = null;
+let PR = null, gpsKm = null, progKm = 0;   // gpsKm: tu posición sobre el perfil; progKm: avance máximo sobre la ruta
 function drawProfile() {
   const w = box.clientWidth, h = box.clientHeight;
   if (!w || !h || !KEYS.length) return;
@@ -254,6 +266,24 @@ function drawProfile() {
     <line id="cl" y1="${M.t}" y2="${h - M.b}" stroke="var(--fg)" stroke-dasharray="3 3" style="display:none"/>
     <circle id="cc" r="5" fill="var(--panel)" stroke="var(--r${cur})" stroke-width="3" style="display:none"/></svg>`;
   PR = { x, y, KM, w };
+  setGps(gpsKm);
+}
+function setGps(d) {   // punto de tu posición en el perfil (solo al seguir una ruta)
+  gpsKm = d;
+  const svg = box.querySelector('svg'); if (!svg || !PR) return;
+  let c = $('gc');
+  if (d == null) { if (c) c.remove(); return; }
+  if (!c) {
+    c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    c.id = 'gc'; c.setAttribute('r', '6'); c.setAttribute('fill', 'var(--accent)'); c.setAttribute('stroke', 'var(--panel)'); c.setAttribute('stroke-width', '2');
+    svg.appendChild(c);
+  }
+  c.setAttribute('cx', PR.x(d)); c.setAttribute('cy', PR.y(at(d).ele));
+}
+const upAcc = new WeakMap();
+function ascent(r) {   // desnivel positivo acumulado por punto de la ruta
+  if (!upAcc.has(r)) { const a = [0]; for (let i = 1; i < r.pts.length; i++) a.push(a[i - 1] + Math.max(0, r.pts[i][2] - r.pts[i - 1][2])); upAcc.set(r, a); }
+  return upAcc.get(r);
 }
 function at(d) {
   const r = ROUTES[cur]; let i = 1;
@@ -481,7 +511,7 @@ const NEAR_PEAK = 40, OFF_ROUTE = 50;   // m
 let offRoute = false;
 addEventListener('track:fix', e => {
   const f = e.detail, el = $('routeInfo');
-  if (!f || f[4] > 50) { if (!f) { el.hidden = true; offRoute = false; } return; }
+  if (!f || f[4] > 50) { if (!f) { el.hidden = true; offRoute = false; setGps(null); progKm = 0; } return; }
   const hit = PEAKS.find(p => Track.hav(f, [p.lon, p.lat]) <= NEAR_PEAK);
   if (hit && !doneSet().has(hit.id)) {
     const s = doneSet(); s.add(hit.id); store('cims:done', [...s]);
@@ -491,11 +521,16 @@ addEventListener('track:fix', e => {
   }
   if (!P || !KEYS.length) { el.hidden = true; offRoute = false; return; }
   const r = ROUTES[cur], pr = Track.projectOnLine(f, r.pts);
-  if (pr.d > 600) { el.hidden = true; offRoute = false; return; }   // lejos de la ruta: no es relevante
+  if (pr.d > 600) { el.hidden = true; offRoute = false; setGps(null); progKm = 0; return; }   // lejos de la ruta: no es relevante
   const off = pr.d > OFF_ROUTE, km = n => n.toFixed(1).replace('.', ',');
+  if (!off) {   // avance monótono: el error del GPS no debe hacer retroceder el punto
+    progKm = Math.max(progKm, r.dist[pr.i] + pr.t * (r.dist[pr.i + 1] - r.dist[pr.i]));
+    setGps(progKm);
+  }
+  const A = ascent(r), up = A[A.length - 1] - A[pr.i];
   el.hidden = false; el.classList.toggle('off', off);
   el.innerHTML = off ? `<b>Fuera de la ruta ${cur}</b><small>A ${Math.round(pr.d)} m del trazado. Pulsa «Volver» si te has perdido.</small>`
-                     : `<b>En la ruta ${cur}</b><small>${km(pr.along / 1000)} de ${km(r.km)} km · a ${Math.round(pr.d)} m del trazado</small>`;
+                     : `<b>En la ruta ${cur}</b><small>${km(progKm)} de ${km(r.km)} km · quedan ${km(Math.max(0, r.km - progKm))} km y +${Math.round(up)} m · a ${Math.round(pr.d)} m del trazado</small>`;
   if (off && !offRoute && navigator.vibrate) navigator.vibrate([200, 100, 200]);
   offRoute = off;
 });

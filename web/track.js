@@ -125,7 +125,7 @@ const Track = (() => {
   /* ---------- grabar / parar ---------- */
   function begin(t) {
     rec = t; rec.open = true; unsaved = 1; flush(); setLine(rec.pts);
-    startWatch(); lockScreen(); timer = setInterval(renderInfo, 1000); msg = ''; renderInfo(); renderBtn();
+    startWatch(); lockScreen(); timer = setInterval(renderInfo, 1000); msg = ''; renderInfo(); renderBtn(); navSync();
   }
   function start() {
     if (pending) finish();
@@ -138,7 +138,7 @@ const Track = (() => {
     if (!needWatch()) stopWatch();
     if (t.pts.length < 2) { tx('readwrite', s => s.delete(t.id)).catch(() => {}); setLine([]); say('Grabación demasiado corta: descartada.'); }
     else { tx('readwrite', s => s.put(t)).catch(() => {}); say('Guardado: ' + fmtKm(t.dist) + '. Descárgalo en «Tracks».'); }
-    renderBtn(); renderList();
+    renderBtn(); renderList(); navSync();
   }
   function finish() {   // cierra una grabación que quedó abierta (se cerró la página sin parar)
     const t = pending; pending = null; t.open = false;
@@ -189,13 +189,14 @@ const Track = (() => {
     if (pts.length) setSrc('rec-start', { type: 'Point', coordinates: [pts[0][0], pts[0][1]] });
     if (t !== 'live') view(t);
     if (!compassOn) { compassOn = true; startCompass(); }
-    startWatch(); guide();
+    startWatch(); guide(); navSync();
   }
   function backOff() {
     back = null; brg = null; offTrack = false;
     $('backInfo').hidden = true; $('backInfo').classList.remove('off'); $('backBtn').setAttribute('aria-pressed', 'false');
     setSrc('rec-guide', null); setSrc('rec-start', null);
     if (!needWatch()) stopWatch();
+    navSync();
   }
 
   /* ---------- GPX ---------- */
@@ -218,6 +219,7 @@ const Track = (() => {
   }
 
   /* ---------- interfaz ---------- */
+  const navSync = () => dispatchEvent(new CustomEvent('track:mode', { detail: !!(rec || back) }));
   function renderBtn() {
     const b = $('recBtn'); b.textContent = rec ? '■ Parar' : '● Grabar'; b.classList.toggle('on', !!rec); b.setAttribute('aria-pressed', !!rec);
   }
